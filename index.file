@@ -1,49 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Business Name</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<header class="hero">
-  <div class="hero-content">
-    <h1>Your Business Name</h1>
-    <p>Professional services you can trust</p>
-    <a href="#contact" class="btn">Get a Quote</a>
-  </div>
-</header>
-
-<section class="services">
-  <h2>Our Services</h2>
-  <div class="service-box">
-    <div>Service One</div>
-    <div>Service Two</div>
-    <div>Service Three</div>
-  </div>
-</section>
-
-<section class="about">
-  <h2>Why Choose Us</h2>
-  <p>
-    We provide reliable, affordable, and professional services tailored to your needs.
-  </p>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>📞 (555) 555-5555</p>
-  <p>📍 City, State</p>
-  <a href="mailto:business@email.com" class="btn">Email Us</a>
-</section>
-
-<footer>
-  © 2025 Your Business Name
-</footer>
-
-<script src="script.js"></script>
-</body>
+<html>
+  <body style="background:black;color:white;text-align:center;padding-top:40vh;">
+    <h1>IT WORKS 🔥</h1>
+  </body>
 </html>
