@@ -1,1 +1,36 @@
-body { font-family: Arial; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+nav {
+  padding: 15px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
