@@ -3,29 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NewGen Services Demo</title>
+  <title>NewGen Digital Studio</title>
   <link rel="stylesheet" href="style.css">
 
-  <!-- Quick CSS Test: ensures colors show even if style.css fails -->
+  <!-- Inline CSS Test -->
   <style>
-    body { 
-      background: linear-gradient(135deg, #6a11cb, #2575fc); 
-      color: white; 
-    }
-    h1 { 
-      font-size: 3rem; 
-      text-align: center; 
-      margin-top: 50vh; 
-    }
+    body { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; }
+    h1 { font-size: 3rem; text-align: center; margin-top: 50vh; }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">NewGen Digital Studio</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- Hero Section -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-content">
-      <h1 class="animated-text">Welcome to <span>NewGen Services</span></h1>
-      <p>Showcasing the best demo of web solutions we offer!</p>
+      <h1 class="animated-text">Elevate Your Digital Presence</h1>
+      <p>Professional web solutions tailored to your business</p>
       <a href="#services" class="btn">Explore Services</a>
     </div>
   </section>
@@ -36,22 +40,54 @@
     <div class="service-cards">
       <div class="card">
         <h3>Web Design</h3>
-        <p>Modern, responsive websites tailored to your needs.</p>
+        <p>Modern, responsive websites that look amazing on every device.</p>
       </div>
       <div class="card">
         <h3>SEO Optimization</h3>
-        <p>Boost your online visibility and attract more clients.</p>
+        <p>Boost your search ranking and attract more clients.</p>
       </div>
       <div class="card">
         <h3>Custom Apps</h3>
-        <p>Interactive applications to engage and retain your audience.</p>
+        <p>Interactive applications that engage your audience.</p>
       </div>
     </div>
   </section>
 
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-card">Project 1</div>
+      <div class="portfolio-card">Project 2</div>
+      <div class="portfolio-card">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p>"NewGen Digital Studio transformed our website. Amazing work!"</p>
+        <span>- Client A</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Professional, fast, and creative. Highly recommend!"</p>
+        <span>- Client B</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA Section -->
+  <section id="contact" class="contact">
+    <h2>Get Started Today</h2>
+    <p>Work with NewGen Digital Studio to elevate your brand.</p>
+    <a href="#" class="btn">Contact Us</a>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 NewGen Services. All rights reserved.</p>
+    <p>&copy; 2025 NewGen Digital Studio. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
