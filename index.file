@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<html>
-  <body style="background:black;color:white;text-align:center;padding-top:40vh;">
-    <h1>IT WORKS 🔥</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Demo Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to My Demo Site!</h1>
+    <p>This is my first website on GitHub Pages.</p>
+
+    <button id="clickMe">Click Me!</button>
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+</body>
 </html>
