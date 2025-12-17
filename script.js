@@ -1,8 +1,8 @@
-// Smooth Scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if(target) target.scrollIntoView({ behavior: "smooth" });
+    document.querySelector(link.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
   });
 });
