@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium Demo • NewGen</title>
-  <meta name="description" content="Premium 6-page demo: brand-level polish, case studies, pricing, and contact.">
-  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Demo • Platform / Studio</title>
+  <meta name="description" content="Premium 6-page demo with platform-level structure, case studies, pricing, and a high-end experience." />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
 <nav class="navbar">
-  <div class="logo">North & Co. Studio</div>
-  <button class="nav-toggle" aria-label="Open menu">Menu</button>
-  <ul class="nav-links">
-    <li><a href="../index.html">← Back</a></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a href="contact.html" class="btn small">Start</a></li>
-  </ul>
+  <div class="nav-inner">
+    <div class="logo">Nova Platform Studio</div>
+    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html">Case Studies</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="btn small accent">Start</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section class="hero reveal">
-  <div class="container hero-surface" style="padding:62px 22px;">
-    <h1>Design that feels expensive.</h1>
-    <p>Premium package demo: 6 pages, case studies, pricing structure, and brand-level polish with subtle interactions.</p>
+<header class="hero reveal" style="padding-bottom:36px;">
+  <div class="container hero-image"
+       style="background-image:url('https://images.unsplash.com/photo-1557825835-70d97c4aa567?auto=format&fit=crop&w=1800&q=70');background-size:cover;background-position:center;">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="kicker" style="color:rgba(255,255,255,.85);">Premium package demo • 6 pages</div>
+      <h1>Build a brand that feels like a platform.</h1>
+      <p>
+        This Premium demo shows what clients pay for: a multi-page system with consistent components,
+        case studies, pricing structure, and a high-end flow that makes people trust you.
+      </p>
 
-    <div class="btn-row">
-      <a class="btn" href="work.html">View Case Studies</a>
-      <a class="btn ghost" href="pricing.html">See Pricing</a>
-      <a class="btn ghost" href="contact.html">Start Project</a>
-    </div>
+      <div class="btn-row" style="justify-content:flex-start;">
+        <a class="btn accent" href="work.html">View Case Studies</a>
+        <a class="btn ghost" href="pricing.html" style="border-color:rgba(255,255,255,.3);color:#fff;">See Pricing</a>
+        <a class="btn ghost" href="contact.html" style="border-color:rgba(255,255,255,.3);color:#fff;">Start Project</a>
+      </div>
 
-    <div class="hero-badges">
-      <div class="badge">Brand system</div>
-      <div class="badge">Case studies</div>
-      <div class="badge">Premium UI</div>
-      <div class="badge">High-end flow</div>
+      <div class="badges" style="justify-content:flex-start;">
+        <div class="pill">Design system feel</div>
+        <div class="pill">6-page structure</div>
+        <div class="pill">Case studies</div>
+        <div class="pill">Pricing clarity</div>
+      </div>
     </div>
   </div>
-</section>
+</header>
 
 <section class="section light reveal">
   <div class="container">
     <h2>Premium outcomes</h2>
-    <p class="sub">This is what clients pay for: clarity, trust, and a high-end experience.</p>
+    <p class="sub">
+      Premium isn’t “more pages.” It’s a consistent experience that builds trust across every click.
+    </p>
 
     <div class="grid cols-3">
-      <div class="card"><h3>Brand presence</h3><p>Consistent typography, spacing, and tone across all pages.</p></div>
-      <div class="card"><h3>Trust at scale</h3><p>Case studies, results, and deep pages build confidence.</p></div>
-      <div class="card"><h3>Conversion path</h3><p>Every page pushes toward the “Start” action.</p></div>
+      <div class="card">
+        <h3>Brand-level polish</h3>
+        <p>Typography, spacing, and layout rules stay consistent across pages.</p>
+      </div>
+      <div class="card">
+        <h3>Proof built-in</h3>
+        <p>Case studies tell the story: problem → solution → results.</p>
+      </div>
+      <div class="card">
+        <h3>Conversion path</h3>
+        <p>Every page pushes toward “Start” without feeling pushy.</p>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn" href="services.html">Explore Services</a>
+      <a class="btn ghost" href="about.html">Meet the Studio</a>
     </div>
   </div>
 </section>
@@ -59,23 +85,59 @@
 <section class="section reveal">
   <div class="container">
     <h2>Featured case studies</h2>
-    <p class="sub">Premium sites show proof. Click Work to see full layouts.</p>
+    <p class="sub">A premium website shows receipts. Here’s how we present proof.</p>
 
     <div class="grid cols-3">
-      <div class="card"><h3>Helios Dental</h3><p>Higher booking rate from clearer flow + better trust sections.</p></div>
-      <div class="card"><h3>Atlas Fitness</h3><p>New landing + pricing clarity → more memberships.</p></div>
-      <div class="card"><h3>Bluewave Law</h3><p>Brand polish + authority sections improved consultation leads.</p></div>
+      <div class="card">
+        <h3>Helios Dental</h3>
+        <p>New flow + trust sections increased booking intent and call volume.</p>
+      </div>
+      <div class="card">
+        <h3>Atlas Fitness</h3>
+        <p>Pricing clarity + landing polish improved membership inquiries.</p>
+      </div>
+      <div class="card">
+        <h3>Bluewave Law</h3>
+        <p>Authority layout + premium design improved consultation leads.</p>
+      </div>
     </div>
 
-    <div class="btn-row" style="margin-top:22px;">
-      <a class="btn" href="work.html">View All Work</a>
-      <a class="btn ghost" href="services.html">Services</a>
+    <div class="btn-row">
+      <a class="btn accent" href="work.html">View All Case Studies</a>
+      <a class="btn ghost" href="pricing.html">Pricing</a>
+    </div>
+  </div>
+</section>
+
+<section class="section light reveal">
+  <div class="container">
+    <h2>FAQ</h2>
+    <p class="sub">Premium includes deeper client education: fewer questions, faster closes.</p>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">What makes Premium different? <span>+</span></div>
+        <div class="faq-a">Premium is a full system: multiple pages, consistent components, proof pages, and pricing clarity.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can you match a reference site? <span>+</span></div>
+        <div class="faq-a">Yes. We can match the vibe while keeping your brand unique and the build fast.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you help with domain + launch? <span>+</span></div>
+        <div class="faq-a">Yes. Premium projects include launch guidance and best practices.</div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn" href="contact.html">Start a Project</a>
+      <a class="btn ghost" href="services.html">What’s Included</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 North & Co. Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Nova Platform Studio • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>
