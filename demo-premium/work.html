@@ -3,33 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Case Studies • Premium Demo</title>
-  <meta name="description" content="Premium case studies page: problem, solution, results." />
+  <title>Templates & Proof • Premium Demo</title>
+  <meta name="description" content="Premium proof page with templates gallery + case-study style cards." />
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
+<body style="--accent:#7c3aed;">
 
 <nav class="navbar">
   <div class="nav-inner">
-    <div class="logo">Nova Platform Studio</div>
+    <div class="logo">
+      <span class="logo-badge" style="background:#7c3aed;">NP</span>
+      Nova Platform
+    </div>
+
     <button class="nav-toggle" aria-label="Open menu">Menu</button>
+
     <ul class="nav-links">
-      <li><a href="../index.html">← Back</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="work.html">Case Studies</a></li>
-      <li><a href="about.html">About</a></li>
+      <li class="dd">
+        <a href="index.html#products">Products ▾</a>
+        <div class="dd-panel">
+          <div class="dd-grid">
+            <a class="dd-item" href="index.html#templates"><strong>Templates</strong><span>Browse multiple styles.</span></a>
+            <a class="dd-item" href="index.html#domains"><strong>Domains</strong><span>Buy or connect one.</span></a>
+            <a class="dd-item" href="index.html#seo"><strong>SEO</strong><span>Show up on Google.</span></a>
+            <a class="dd-item" href="index.html#marketing"><strong>Marketing</strong><span>Grow repeat business.</span></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="dd">
+        <a href="index.html#solutions">Solutions ▾</a>
+        <div class="dd-panel">
+          <div class="dd-grid">
+            <a class="dd-item" href="services.html"><strong>Services</strong><span>What’s included.</span></a>
+            <a class="dd-item" href="work.html"><strong>Case Studies</strong><span>Proof pages.</span></a>
+            <a class="dd-item" href="pricing.html"><strong>Pricing</strong><span>Value clarity.</span></a>
+            <a class="dd-item" href="contact.html"><strong>Start</strong><span>Project intake.</span></a>
+          </div>
+        </div>
+      </li>
+
       <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html" class="btn small accent">Start</a></li>
+      <li><a href="work.html">Templates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="../index.html">← Back</a></li>
     </ul>
+
+    <div style="display:flex;gap:10px;align-items:center;">
+      <a class="iconbtn" href="#" aria-label="Language">🌐 EN</a>
+      <a class="iconbtn" href="services.html">Services</a>
+      <a class="btn small accent" href="contact.html">Get Started</a>
+    </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
-  <div class="container hero-surface">
-    <div class="kicker">Proof section</div>
-    <h1>Case studies</h1>
-    <p>Premium includes “receipt pages” that make visitors trust you faster.</p>
+  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #f2eaff, #ffffff);">
+    <div class="kicker">Templates + proof</div>
+    <h1>Show variety. Build trust faster.</h1>
+    <p>Premium sells best when people can see examples across niches, plus proof-style case blocks.</p>
     <div class="btn-row">
       <a class="btn accent" href="contact.html">Start a Project</a>
       <a class="btn ghost" href="pricing.html">Pricing</a>
@@ -37,54 +69,82 @@
   </div>
 </header>
 
-<section class="section light reveal">
-  <div class="container">
-    <h2>Featured</h2>
-    <p class="sub">Problem → Solution → Result layouts (this is what separates premium from “template sites”).</p>
+<section class="section color-a reveal">
+  <div class="container" style="text-align:left;">
+    <h2>Template gallery</h2>
+    <p class="sub" style="margin-left:0;">This is the “Wix-like” feel: lots of visuals and options.</p>
+
+    <div class="templates">
+      <div class="tpl">
+        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70');"></div>
+        <div class="cap"><strong>Professional</strong><span>Authority, trust, clean CTAs.</span></div>
+      </div>
+      <div class="tpl">
+        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1520975958225-5c5c6f43a3f5?auto=format&fit=crop&w=1600&q=70');"></div>
+        <div class="cap"><strong>Store</strong><span>Products, conversion, support pages.</span></div>
+      </div>
+      <div class="tpl">
+        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1600&q=70');"></div>
+        <div class="cap"><strong>Premium Brand</strong><span>Platform feel + proof pages.</span></div>
+      </div>
+      <div class="tpl">
+        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=70');"></div>
+        <div class="cap"><strong>Studio</strong><span>Services, work, pricing.</span></div>
+      </div>
+    </div>
+
+    <div class="btn-row" style="justify-content:flex-start;">
+      <a class="btn" href="services.html">What’s Included</a>
+      <a class="btn ghost" href="index.html">Back Home</a>
+    </div>
+  </div>
+</section>
+
+<section class="section color-b reveal">
+  <div class="container" style="text-align:left;">
+    <h2>Case studies</h2>
+    <p class="sub" style="margin-left:0;">Problem → Solution → Result (premium trust builder).</p>
 
     <div class="grid cols-2">
       <div class="card">
         <h3>Helios Dental</h3>
         <hr class="sep">
-        <p><strong>Problem:</strong> Visitors didn’t trust the brand and bookings were low.</p>
-        <p><strong>Solution:</strong> Rebuilt flow: clear service categories, authority sections, and stronger CTAs.</p>
-        <p><strong>Result:</strong> Higher booking intent and more call volume.</p>
+        <p><strong>Problem:</strong> Low booking intent and weak trust.</p>
+        <p><strong>Solution:</strong> Rebuilt flow, proof blocks, and clearer CTAs.</p>
+        <p><strong>Result:</strong> More calls + higher booking intent.</p>
       </div>
-
       <div class="card">
         <h3>Atlas Fitness</h3>
         <hr class="sep">
-        <p><strong>Problem:</strong> Pricing confusion and weak conversion path.</p>
-        <p><strong>Solution:</strong> Pricing clarity + landing polish + testimonials and FAQs.</p>
+        <p><strong>Problem:</strong> Pricing confusion.</p>
+        <p><strong>Solution:</strong> Pricing clarity + testimonials + FAQ.</p>
         <p><strong>Result:</strong> Increased membership inquiries.</p>
       </div>
-
       <div class="card">
         <h3>Bluewave Law</h3>
         <hr class="sep">
-        <p><strong>Problem:</strong> Site didn’t feel authoritative or premium.</p>
-        <p><strong>Solution:</strong> Clean design system + proof sections + structured pages.</p>
-        <p><strong>Result:</strong> More consultation requests.</p>
+        <p><strong>Problem:</strong> Site didn’t feel premium.</p>
+        <p><strong>Solution:</strong> Design system + authority layout.</p>
+        <p><strong>Result:</strong> More consult requests.</p>
       </div>
-
       <div class="card">
         <h3>Shoreline Realty</h3>
         <hr class="sep">
-        <p><strong>Problem:</strong> Traffic wasn’t becoming leads.</p>
-        <p><strong>Solution:</strong> Stronger conversion CTAs + trust blocks + better layout hierarchy.</p>
+        <p><strong>Problem:</strong> Traffic wasn’t converting.</p>
+        <p><strong>Solution:</strong> Better landing flow + lead capture.</p>
         <p><strong>Result:</strong> Higher form submissions.</p>
       </div>
     </div>
 
-    <div class="btn-row">
-      <a class="btn" href="services.html">What we build</a>
+    <div class="btn-row" style="justify-content:flex-start;">
+      <a class="btn accent" href="pricing.html">See Pricing</a>
       <a class="btn ghost" href="contact.html">Start</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Nova Platform Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Nova Platform • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>
