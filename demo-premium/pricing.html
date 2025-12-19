@@ -4,54 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing • Premium Demo</title>
-  <meta name="description" content="Premium pricing page with tiers and comparison to justify value." />
+  <meta name="description" content="Premium pricing page in Wix-like platform style." />
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
+<body style="--accent:#7c3aed;">
 
 <nav class="navbar">
   <div class="nav-inner">
-    <div class="logo">Nova Platform Studio</div>
+    <div class="logo">
+      <span class="logo-badge" style="background:#7c3aed;">NP</span>
+      Nova Platform
+    </div>
+
     <button class="nav-toggle" aria-label="Open menu">Menu</button>
+
     <ul class="nav-links">
-      <li><a href="../index.html">← Back</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="work.html">Case Studies</a></li>
-      <li><a href="about.html">About</a></li>
+      <li class="dd">
+        <a href="index.html#products">Products ▾</a>
+        <div class="dd-panel">
+          <div class="dd-grid">
+            <a class="dd-item" href="index.html#templates"><strong>Templates</strong><span>Browse multiple styles.</span></a>
+            <a class="dd-item" href="index.html#domains"><strong>Domains</strong><span>Buy or connect one.</span></a>
+            <a class="dd-item" href="index.html#seo"><strong>SEO</strong><span>Show up on Google.</span></a>
+            <a class="dd-item" href="index.html#marketing"><strong>Marketing</strong><span>Grow repeat business.</span></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="dd">
+        <a href="index.html#solutions">Solutions ▾</a>
+        <div class="dd-panel">
+          <div class="dd-grid">
+            <a class="dd-item" href="services.html"><strong>Services</strong><span>What’s included.</span></a>
+            <a class="dd-item" href="work.html"><strong>Case Studies</strong><span>Proof pages.</span></a>
+            <a class="dd-item" href="pricing.html"><strong>Pricing</strong><span>Value clarity.</span></a>
+            <a class="dd-item" href="contact.html"><strong>Start</strong><span>Project intake.</span></a>
+          </div>
+        </div>
+      </li>
+
       <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html" class="btn small accent">Start</a></li>
+      <li><a href="work.html">Templates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="../index.html">← Back</a></li>
     </ul>
+
+    <div style="display:flex;gap:10px;align-items:center;">
+      <a class="iconbtn" href="#" aria-label="Language">🌐 EN</a>
+      <a class="iconbtn" href="work.html">Proof</a>
+      <a class="btn small accent" href="contact.html">Get Started</a>
+    </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
-  <div class="container hero-surface">
-    <div class="kicker">Value clarity</div>
-    <h1>Pricing</h1>
-    <p>Premium sites justify the cost with structure, proof, and a consistent system.</p>
+  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #f2eaff, #ffffff);">
+    <div class="kicker">Pricing • value clarity</div>
+    <h1>Pricing that makes the upgrade feel obvious.</h1>
+    <p>Premium pricing pages work because they explain what changes at each level.</p>
     <div class="btn-row">
       <a class="btn accent" href="contact.html">Start a Project</a>
-      <a class="btn ghost" href="work.html">Case Studies</a>
+      <a class="btn ghost" href="services.html">What’s Included</a>
     </div>
   </div>
 </header>
 
-<section class="section light reveal">
-  <div class="container">
+<section class="section color-a reveal">
+  <div class="container" style="text-align:left;">
     <h2>Packages</h2>
-    <p class="sub">These are demo numbers for the Premium example. You can set your real pricing later.</p>
+    <p class="sub" style="margin-left:0;">Demo numbers — replace with your real pricing anytime.</p>
 
     <div class="grid cols-3">
       <div class="card">
         <h3>Starter</h3>
         <p>2–3 pages • clean structure</p>
         <hr class="sep">
-        <p><strong>Includes:</strong></p>
+        <p><strong>Best for:</strong> simple brands needing a clean presence.</p>
         <ul class="ul">
           <li>Clean hero + CTA</li>
-          <li>Services layout</li>
-          <li>Mobile-first</li>
+          <li>Services page</li>
+          <li>Mobile-first layout</li>
         </ul>
         <div class="btn-row" style="justify-content:flex-start;">
           <a class="btn ghost" href="contact.html">Ask</a>
@@ -62,11 +94,11 @@
         <h3>Pro</h3>
         <p>6 pages • proof + pricing</p>
         <hr class="sep">
-        <p><strong>Includes:</strong></p>
+        <p><strong>Best for:</strong> serious business owners who want a platform feel.</p>
         <ul class="ul">
           <li>Design system feel</li>
-          <li>Case studies</li>
-          <li>Pricing structure</li>
+          <li>Proof page / case studies</li>
+          <li>Pricing clarity</li>
           <li>Better conversion flow</li>
         </ul>
         <div class="btn-row" style="justify-content:flex-start;">
@@ -78,12 +110,12 @@
         <h3>Custom</h3>
         <p>Platform-level • integrations</p>
         <hr class="sep" style="border-top-color:rgba(255,255,255,.18);">
-        <p><strong>Includes:</strong></p>
+        <p><strong>Best for:</strong> brands that need advanced features.</p>
         <ul class="ul" style="color:#fff;">
-          <li>Custom pages</li>
-          <li>Integrations (booking, payments)</li>
-          <li>Analytics setup</li>
-          <li>Growth improvements</li>
+          <li>Custom pages + flows</li>
+          <li>Booking, payments, forms</li>
+          <li>Analytics + tracking</li>
+          <li>Marketing sections</li>
         </ul>
         <div class="btn-row" style="justify-content:flex-start;">
           <a class="btn" href="contact.html" style="background:#fff;color:#000;">Talk to us</a>
@@ -93,26 +125,26 @@
   </div>
 </section>
 
-<section class="section reveal">
-  <div class="container">
+<section class="section color-b reveal">
+  <div class="container" style="text-align:left;">
     <h2>What premium buys</h2>
-    <p class="sub">This is the difference clients feel immediately.</p>
+    <p class="sub" style="margin-left:0;">This is the difference clients feel on the first click.</p>
 
     <div class="grid cols-3">
       <div class="card"><h3>Depth</h3><p>Multiple pages with clear intent and hierarchy.</p></div>
-      <div class="card"><h3>Consistency</h3><p>A design system, not a random set of sections.</p></div>
-      <div class="card"><h3>Proof</h3><p>Case studies and pricing pages build confidence.</p></div>
+      <div class="card"><h3>Consistency</h3><p>A system, not random sections.</p></div>
+      <div class="card"><h3>Proof</h3><p>Case studies + pricing pages build confidence.</p></div>
     </div>
 
-    <div class="btn-row">
-      <a class="btn" href="work.html">See Case Studies</a>
+    <div class="btn-row" style="justify-content:flex-start;">
+      <a class="btn" href="work.html">See Proof</a>
       <a class="btn ghost" href="contact.html">Start</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Nova Platform Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Nova Platform • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>
