@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NewGen Digital Studio</title>
-  <meta name="description" content="Premium, Apple-like websites built for growth. Mobile-first. Fast. Clean. Built to convert.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Premium websites built for growth — clean design, real structure, and conversion-focused layouts." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <nav class="navbar">
-  <div class="logo">NewGen Digital Studio</div>
-
-  <button class="nav-toggle" aria-label="Open menu">Menu</button>
-
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Demos</a></li>
-    <li><a href="#contact" class="btn small">Get a Quote</a></li>
-  </ul>
+  <div class="nav-inner">
+    <div class="logo">NewGen Digital Studio</div>
+    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html" class="btn small">Get a Quote</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section id="home" class="hero reveal">
-  <div class="container hero-surface" style="padding:58px 22px;">
-    <h1>Premium websites built for growth</h1>
-    <p>Clean, Apple-like design with real business structure: clear offers, trust sections, and conversion-focused layouts.</p>
+<header class="hero reveal">
+  <div class="container hero-surface">
+    <div class="kicker">Apple-like. Clean. Built to convert.</div>
+    <h1>Websites that look premium and get customers.</h1>
+    <p>
+      You’re not paying for “a page.” You’re paying for structure, clarity, and a site that makes people trust your business.
+      Pick a package based on how serious you are about growth.
+    </p>
 
     <div class="btn-row">
-      <a href="#portfolio" class="btn">View Live Demos</a>
-      <a href="#contact" class="btn ghost">Get a Quote</a>
+      <a class="btn accent" href="work.html">View Live Demos</a>
+      <a class="btn ghost" href="packages.html">See Packages</a>
+      <a class="btn ghost" href="contact.html">Get a Quote</a>
     </div>
 
-    <div class="hero-badges">
-      <div class="badge">Mobile-first</div>
-      <div class="badge">Fast load</div>
-      <div class="badge">Clean UI</div>
-      <div class="badge">Built to convert</div>
+    <div class="badges">
+      <div class="pill">Mobile-first</div>
+      <div class="pill">Fast loading</div>
+      <div class="pill">Clean UI</div>
+      <div class="pill">Conversion-focused</div>
+    </div>
+  </div>
+</header>
+
+<section class="section light reveal">
+  <div class="container">
+    <h2>What you get</h2>
+    <p class="sub">A real business website needs more than aesthetics: it needs flow, trust, and clear action buttons.</p>
+
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Design that feels expensive</h3>
+        <p>Clean spacing, strong typography, and a modern layout that looks legit immediately.</p>
+      </div>
+      <div class="card">
+        <h3>Built for leads</h3>
+        <p>Every page pushes toward a call, a text, or a form — not confusion.</p>
+      </div>
+      <div class="card">
+        <h3>Package clarity</h3>
+        <p>Basic, Growth, or Premium — your demo site shows the difference instantly.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="services" class="section light reveal">
+<section class="section reveal">
   <div class="container">
-    <h2>Services</h2>
-    <p class="sub">Everything you need to look professional online and turn visitors into leads.</p>
-
-    <div class="service-grid">
-      <div class="service-card">Website Design</div>
-      <div class="service-card">Website Redesign</div>
-      <div class="service-card">Mobile Optimization</div>
-      <div class="service-card">Landing Pages</div>
-      <div class="service-card">Branding & Logo Setup</div>
-    </div>
-  </div>
-</section>
-
-<section id="portfolio" class="section reveal">
-  <div class="container">
-    <h2>Live Website Demos</h2>
-    <p class="sub">Each demo matches the package level — so clients understand the price difference instantly.</p>
+    <h2>Live demos</h2>
+    <p class="sub">Different niches per package so it feels like real work, not one template.</p>
 
     <div class="portfolio-grid">
       <a href="demo-basic/" class="portfolio-card">
-        <h3>Basic — 1 Page</h3>
-        <p>Clean, professional presence</p>
-        <span>View Demo →</span>
+        <h3>Basic • Auto Detailing</h3>
+        <p>1 page • strong CTA • clean visuals</p>
+        <span>Open Demo →</span>
       </a>
 
       <a href="demo-growth/" class="portfolio-card highlight">
-        <h3>Growth — 3 Pages</h3>
-        <p>More trust + conversions</p>
-        <span>View Demo →</span>
+        <h3>Growth • Streetwear Brand</h3>
+        <p>3 pages • product grid • trust + conversion</p>
+        <span>Open Demo →</span>
       </a>
 
       <a href="demo-premium/" class="portfolio-card premium">
-        <h3>Premium — 6 Pages</h3>
-        <p>Brand-level polish</p>
-        <span>View Demo →</span>
+        <h3>Premium • Platform / Studio</h3>
+        <p>6 pages • case studies • pricing • high-end feel</p>
+        <span>Open Demo →</span>
       </a>
     </div>
-  </div>
-</section>
-
-<section id="contact" class="section light reveal">
-  <div class="container">
-    <h2>Get a Quote</h2>
-    <p class="sub">This is a placeholder. Next step: connect a real form to your email (I can set that up after).</p>
 
     <div class="btn-row">
-      <a class="btn" href="mailto:newgensites@example.com">Email</a>
-      <a class="btn ghost" href="tel:+15551234567">Call</a>
-      <a class="btn ghost" href="sms:+15551234567">Text</a>
+      <a class="btn ghost" href="work.html">See demo breakdown</a>
+      <a class="btn" href="contact.html">Get a quote</a>
     </div>
   </div>
 </section>
