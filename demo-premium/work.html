@@ -3,148 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proof • Lumen Creative Studio</title>
-  <meta name="description" content="Lumen Creative Studio proof page with templates gallery and case-study style cards." />
+  <title>Styles • Atlas Grooming Club</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body style="--accent:#7c3aed;">
+<body style="--accent:#0f766e;">
 
 <nav class="navbar">
   <div class="nav-inner">
     <div class="logo">
-      <span class="logo-badge" style="background:#7c3aed;">LC</span>
-      Lumen Creative Studio
+      <span class="logo-badge" style="background:#0f766e;">AG</span>
+      <span data-i18n="demo.premium.brand">Atlas Grooming Club</span>
     </div>
-
-    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <button class="nav-toggle" aria-label="Open menu" data-i18n="nav.menu">Menu</button>
 
     <ul class="nav-links">
-      <li class="dd">
-        <a href="index.html#products">Products ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="index.html#templates"><strong>Templates</strong><span>Browse multiple styles.</span></a>
-            <a class="dd-item" href="index.html#domains"><strong>Domains</strong><span>Buy or connect one.</span></a>
-            <a class="dd-item" href="index.html#seo"><strong>SEO</strong><span>Show up on Google.</span></a>
-            <a class="dd-item" href="index.html#marketing"><strong>Marketing</strong><span>Grow repeat business.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li class="dd">
-        <a href="index.html#solutions">Solutions ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="services.html"><strong>Services</strong><span>What’s included.</span></a>
-            <a class="dd-item" href="work.html"><strong>Case Studies</strong><span>Proof pages.</span></a>
-            <a class="dd-item" href="pricing.html"><strong>Pricing</strong><span>Value clarity.</span></a>
-            <a class="dd-item" href="contact.html"><strong>Start</strong><span>Project intake.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="work.html">Templates</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="demo.premium.nav.services">Services</a></li>
+      <li><a href="work.html" data-i18n="demo.premium.nav.work">Styles</a></li>
+      <li><a href="pricing.html" data-i18n="demo.premium.nav.pricing">Pricing</a></li>
+      <li><a href="contact.html" data-i18n="demo.premium.nav.contact">Contact</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
     </ul>
 
     <div style="display:flex;gap:10px;align-items:center;">
-      <a class="iconbtn" href="#" aria-label="Language">🌐 EN</a>
-      <a class="iconbtn" href="services.html">Services</a>
-      <a class="btn small accent" href="contact.html">Get Started</a>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="pricing.html" data-i18n="demo.premium.view-proof">View Memberships</a>
+      <a class="btn small accent" href="contact.html" data-i18n="nav.get-started">Get Started</a>
     </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
-  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #f2eaff, #ffffff);">
-    <div class="kicker">Proof • Miami, FL</div>
-    <h1>Show variety. Build trust faster.</h1>
-    <p>Premium sells best when people can see examples across industries, plus proof-style case blocks.</p>
-    <div class="btn-row">
-      <a class="btn accent" href="contact.html">Start a Project</a>
-      <a class="btn ghost" href="pricing.html">Pricing</a>
-    </div>
+  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #d4f4ee, #ffffff);">
+    <div class="kicker" data-i18n="demo.premium.work.kicker">Signature styles • Atlas Grooming Club</div>
+    <h1 data-i18n="demo.premium.work.title">Signature looks crafted by master barbers.</h1>
+    <p data-i18n="demo.premium.work.body">Each service is designed for a premium result, from classic executive cuts to modern texture.</p>
   </div>
 </header>
 
-<section class="section color-a reveal">
-  <div class="container" style="text-align:left;">
-    <h2>Template gallery</h2>
-    <p class="sub" style="margin-left:0;">This is the “Wix-like” feel: lots of visuals and options.</p>
-
+<section class="section light reveal">
+  <div class="container">
+    <div class="section-intro">
+      <h2 data-i18n="demo.premium.work.gallery.title">Featured styles</h2>
+      <p class="sub" data-i18n="demo.premium.work.gallery.sub">Browse recent looks and book the style that fits your brand.</p>
+    </div>
     <div class="templates">
       <div class="tpl">
-        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70');"></div>
-        <div class="cap"><strong>Professional</strong><span>Authority, trust, clean CTAs.</span></div>
+        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=70');"></div>
+        <div class="cap"><strong data-i18n="demo.premium.templates.card1.title">Classic cut</strong><span data-i18n="demo.premium.templates.card1.body">Precision finish with executive polish.</span></div>
       </div>
       <div class="tpl">
-        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1520975958225-5c5c6f43a3f5?auto=format&fit=crop&w=1600&q=70');"></div>
-        <div class="cap"><strong>Store</strong><span>Products, conversion, support pages.</span></div>
+        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=1600&q=70');"></div>
+        <div class="cap"><strong data-i18n="demo.premium.templates.card2.title">Ritual shave</strong><span data-i18n="demo.premium.templates.card2.body">Hot towel, oils, and full-service grooming.</span></div>
       </div>
       <div class="tpl">
-        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1600&q=70');"></div>
-        <div class="cap"><strong>Premium Brand</strong><span>Platform feel + proof pages.</span></div>
+        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=70');"></div>
+        <div class="cap"><strong data-i18n="demo.premium.templates.card3.title">Modern texture</strong><span data-i18n="demo.premium.templates.card3.body">Editorial texture and styling for events.</span></div>
       </div>
-      <div class="tpl">
-        <div class="shot" style="background-image:url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=70');"></div>
-        <div class="cap"><strong>Studio</strong><span>Services, work, pricing.</span></div>
-      </div>
-    </div>
-
-    <div class="btn-row" style="justify-content:flex-start;">
-      <a class="btn" href="services.html">What’s Included</a>
-      <a class="btn ghost" href="index.html">Back Home</a>
     </div>
   </div>
 </section>
 
-<section class="section color-b reveal">
+<section class="section reveal">
   <div class="container" style="text-align:left;">
-    <h2>Case studies</h2>
-    <p class="sub" style="margin-left:0;">Problem → Solution → Result (premium trust builder).</p>
-
-    <div class="grid cols-2">
-      <div class="card">
-        <h3>Helios Dental</h3>
-        <hr class="sep">
-        <p><strong>Problem:</strong> Low booking intent and weak trust.</p>
-        <p><strong>Solution:</strong> Rebuilt flow, proof blocks, and clearer CTAs.</p>
-        <p><strong>Result:</strong> More calls + higher booking intent.</p>
-      </div>
-      <div class="card">
-        <h3>Atlas Fitness</h3>
-        <hr class="sep">
-        <p><strong>Problem:</strong> Pricing confusion.</p>
-        <p><strong>Solution:</strong> Pricing clarity + testimonials + FAQ.</p>
-        <p><strong>Result:</strong> Increased membership inquiries.</p>
-      </div>
-      <div class="card">
-        <h3>Bluewave Law</h3>
-        <hr class="sep">
-        <p><strong>Problem:</strong> Site didn’t feel premium.</p>
-        <p><strong>Solution:</strong> Design system + authority layout.</p>
-        <p><strong>Result:</strong> More consult requests.</p>
-      </div>
-      <div class="card">
-        <h3>Shoreline Realty</h3>
-        <hr class="sep">
-        <p><strong>Problem:</strong> Traffic wasn’t converting.</p>
-        <p><strong>Solution:</strong> Better landing flow + lead capture.</p>
-        <p><strong>Result:</strong> Higher form submissions.</p>
-      </div>
-    </div>
-
-    <div class="btn-row" style="justify-content:flex-start;">
-      <a class="btn accent" href="pricing.html">See Pricing</a>
-      <a class="btn ghost" href="contact.html">Start</a>
+    <h2 data-i18n="demo.premium.work.cta.title">Ready to book?</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.work.cta.sub">Choose your location and lock in a premium appointment.</p>
+    <div class="btn-row start">
+      <a class="btn accent" href="contact.html" data-i18n="demo.premium.work.cta.primary">Start a Booking</a>
+      <a class="btn ghost" href="pricing.html" data-i18n="demo.premium.work.cta.secondary">View Memberships</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Lumen Creative Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Atlas Grooming Club • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>

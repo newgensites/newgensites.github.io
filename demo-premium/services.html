@@ -3,125 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services • Lumen Creative Studio</title>
-  <meta name="description" content="Lumen Creative Studio services: premium web design, launch support, and growth-ready pages." />
+  <title>Services • Atlas Grooming Club</title>
+  <meta name="description" content="Atlas Grooming Club services: premium grooming, memberships, and multi-location booking." />
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body style="--accent:#7c3aed;">
+<body style="--accent:#0f766e;">
 
 <nav class="navbar">
   <div class="nav-inner">
     <div class="logo">
-      <span class="logo-badge" style="background:#7c3aed;">LC</span>
-      Lumen Creative Studio
+      <span class="logo-badge" style="background:#0f766e;">AG</span>
+      <span data-i18n="demo.premium.brand">Atlas Grooming Club</span>
     </div>
 
-    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <button class="nav-toggle" aria-label="Open menu" data-i18n="nav.menu">Menu</button>
 
     <ul class="nav-links">
       <li class="dd">
-        <a href="index.html#products">Products ▾</a>
+        <a href="index.html#products"><span data-i18n="nav.products">Products</span> ▾</a>
         <div class="dd-panel">
           <div class="dd-grid">
-            <a class="dd-item" href="index.html#templates"><strong>Templates</strong><span>Browse multiple styles.</span></a>
-            <a class="dd-item" href="index.html#domains"><strong>Domains</strong><span>Buy or connect one.</span></a>
-            <a class="dd-item" href="index.html#seo"><strong>SEO</strong><span>Show up on Google.</span></a>
-            <a class="dd-item" href="index.html#marketing"><strong>Marketing</strong><span>Grow repeat business.</span></a>
+            <a class="dd-item" href="index.html#templates"><strong data-i18n="demo.premium.templates.title">Styles</strong><span data-i18n="demo.premium.templates.sub">Explore signature looks.</span></a>
+            <a class="dd-item" href="index.html#domains"><strong data-i18n="demo.premium.domains.title">Bookings</strong><span data-i18n="demo.premium.domains.sub">Reserve and join membership.</span></a>
+            <a class="dd-item" href="index.html#seo"><strong data-i18n="demo.premium.seo.title">Experience</strong><span data-i18n="demo.premium.seo.sub">Consistency across locations.</span></a>
+            <a class="dd-item" href="index.html#marketing"><strong data-i18n="demo.premium.marketing.title">Brand</strong><span data-i18n="demo.premium.marketing.sub">Proof, loyalty, and story.</span></a>
           </div>
         </div>
       </li>
 
       <li class="dd">
-        <a href="index.html#solutions">Solutions ▾</a>
+        <a href="index.html#solutions"><span data-i18n="nav.solutions">Solutions</span> ▾</a>
         <div class="dd-panel">
           <div class="dd-grid">
-            <a class="dd-item" href="services.html"><strong>Services</strong><span>What’s included.</span></a>
-            <a class="dd-item" href="work.html"><strong>Case Studies</strong><span>Proof pages.</span></a>
-            <a class="dd-item" href="pricing.html"><strong>Pricing</strong><span>Value clarity.</span></a>
-            <a class="dd-item" href="contact.html"><strong>Start</strong><span>Project intake.</span></a>
+            <a class="dd-item" href="services.html"><strong data-i18n="demo.premium.nav.services">Services</strong><span data-i18n="demo.premium.nav.services.sub">What’s included.</span></a>
+            <a class="dd-item" href="work.html"><strong data-i18n="demo.premium.nav.work">Styles</strong><span data-i18n="demo.premium.nav.work.sub">Signature looks.</span></a>
+            <a class="dd-item" href="pricing.html"><strong data-i18n="demo.premium.nav.pricing">Pricing</strong><span data-i18n="demo.premium.nav.pricing.sub">Membership tiers.</span></a>
+            <a class="dd-item" href="contact.html"><strong data-i18n="demo.premium.nav.contact">Contact</strong><span data-i18n="demo.premium.nav.contact.sub">Start a booking.</span></a>
           </div>
         </div>
       </li>
 
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="work.html">Templates</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="pricing.html" data-i18n="demo.premium.nav.pricing">Pricing</a></li>
+      <li><a href="work.html" data-i18n="demo.premium.nav.work">Styles</a></li>
+      <li><a href="contact.html" data-i18n="demo.premium.nav.contact">Contact</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
     </ul>
 
     <div style="display:flex;gap:10px;align-items:center;">
-      <a class="iconbtn" href="#" aria-label="Language">🌐 EN</a>
-      <a class="iconbtn" href="work.html">View Proof</a>
-      <a class="btn small accent" href="contact.html">Get Started</a>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="work.html" data-i18n="demo.premium.view-proof">View Proof</a>
+      <a class="btn small accent" href="contact.html" data-i18n="nav.get-started">Get Started</a>
     </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
-  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #f2eaff, #ffffff);">
-    <div class="kicker">Premium services • Miami, FL</div>
-    <h1>Everything you need to look established online.</h1>
-    <p>
-      Lumen delivers high-end web design, launch support, and conversion-ready structure
-      so your brand looks trusted from the first click.
+  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #d4f4ee, #ffffff);">
+    <div class="kicker" data-i18n="demo.premium.services.hero.kicker">Premium grooming • Miami, FL</div>
+    <h1 data-i18n="demo.premium.services.hero.title">Everything included for a membership-level experience.</h1>
+    <p data-i18n="demo.premium.services.hero.body">
+      Atlas delivers precision barbering, private suites, and concierge booking so every visit feels elevated and effortless.
     </p>
     <div class="btn-row">
-      <a class="btn accent" href="contact.html">Start a Project</a>
-      <a class="btn ghost" href="pricing.html">See Pricing</a>
-      <a class="btn ghost" href="work.html">Case Studies</a>
+      <a class="btn accent" href="contact.html" data-i18n="demo.premium.services.hero.cta.primary">Start a Booking</a>
+      <a class="btn ghost" href="pricing.html" data-i18n="demo.premium.services.hero.cta.secondary">See Pricing</a>
+      <a class="btn ghost" href="work.html" data-i18n="demo.premium.services.hero.cta.tertiary">View Styles</a>
     </div>
   </div>
 </header>
 
 <section class="section color-a reveal">
   <div class="container" style="text-align:left;">
-    <h2>Website build</h2>
-    <p class="sub" style="margin-left:0;">
-      High-end layout, consistent components, and a clean user flow across multiple pages.
+    <h2 data-i18n="demo.premium.services.core.title">Signature grooming</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.services.core.sub">
+      Premium cuts, shaves, and grooming services delivered by a curated team.
     </p>
 
     <div class="grid cols-3">
-      <div class="card"><h3>Design system feel</h3><p>Buttons, spacing, typography, and components match across pages.</p></div>
-      <div class="card"><h3>6+ page structure</h3><p>Home, services, about, work, pricing, contact—built like a real brand.</p></div>
-      <div class="card"><h3>Conversion flow</h3><p>Every page pushes visitors toward the next action without being pushy.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.core.card1.title">Executive cut</h3><p data-i18n="demo.premium.services.core.card1.body">Precision cut with clean lines and finish.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.core.card2.title">Ritual shave</h3><p data-i18n="demo.premium.services.core.card2.body">Hot towel, oils, and a full straight-razor ritual.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.core.card3.title">Beard design</h3><p data-i18n="demo.premium.services.core.card3.body">Custom shaping, conditioning, and line-up.</p></div>
     </div>
 
     <div class="gallery">
-      <div class="tile span-7" style="background-image:url('https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1800&q=70');"></div>
-      <div class="tile span-5" style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=70');"></div>
+      <div class="tile span-7" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=70');"></div>
+      <div class="tile span-5" style="background-image:url('https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=1400&q=70');"></div>
     </div>
   </div>
 </section>
 
 <section class="section color-b reveal">
   <div class="container" style="text-align:left;">
-    <h2>Domains + launch</h2>
-    <p class="sub" style="margin-left:0;">
-      Premium includes launch guidance so your website looks professional from day one.
+    <h2 data-i18n="demo.premium.services.booking.title">Bookings + concierge</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.services.booking.sub">
+      Priority scheduling and private suites keep the experience seamless.
     </p>
 
     <div class="grid cols-2">
       <div class="card">
-        <h3>Buy or connect a domain</h3>
-        <p>We guide the domain choice and setup so everything looks clean and brandable.</p>
+        <h3 data-i18n="demo.premium.services.booking.card1.title">Concierge booking</h3>
+        <p data-i18n="demo.premium.services.booking.card1.body">Reserve your barber, suite, and preferred time in seconds.</p>
         <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;">
-          <input class="input" placeholder="yourbrand.com" style="flex:1;min-width:220px;" />
-          <a class="btn accent" href="contact.html">Check</a>
+          <input class="input" placeholder="Select location" style="flex:1;min-width:220px;" data-i18n-placeholder="demo.premium.domains.search.placeholder" />
+          <a class="btn accent" href="contact.html" data-i18n="demo.premium.domains.search.cta">Book</a>
         </div>
-        <div class="helper" style="margin-top:10px;">Demo UI — real setup happens in the client build.</div>
+        <div class="helper" style="margin-top:10px;" data-i18n="demo.premium.services.booking.card1.helper">Demo UI — full booking stack connects in the final build.</div>
       </div>
 
       <div class="card">
-        <h3>Launch checklist</h3>
-        <p>Professional launch = fewer issues and higher trust.</p>
+        <h3 data-i18n="demo.premium.services.booking.card2.title">Membership perks</h3>
+        <p data-i18n="demo.premium.services.booking.card2.body">Monthly plans unlock premium services and private events.</p>
         <ul class="ul">
-          <li>Mobile QA</li>
-          <li>Performance checks</li>
-          <li>Link + form testing</li>
-          <li>Final “ready to sell” review</li>
+          <li data-i18n="demo.premium.services.booking.card2.item1">Unlimited grooming</li>
+          <li data-i18n="demo.premium.services.booking.card2.item2">Priority access</li>
+          <li data-i18n="demo.premium.services.booking.card2.item3">VIP amenities</li>
         </ul>
         <div class="btn-row" style="justify-content:flex-start;">
-          <a class="btn" href="contact.html">Launch My Site</a>
+          <a class="btn" href="pricing.html" data-i18n="demo.premium.domains.connect.cta">View Memberships</a>
         </div>
       </div>
     </div>
@@ -130,41 +128,41 @@
 
 <section class="section color-c reveal">
   <div class="container" style="text-align:left;">
-    <h2>SEO + analytics ready</h2>
-    <p class="sub" style="margin-left:0;">
-      The structure is designed for Google and people: headings, layout clarity, and speed-first rules.
+    <h2 data-i18n="demo.premium.services.locations.title">Multi-location consistency</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.services.locations.sub">
+      Brand standards, service clarity, and elite delivery across every studio.
     </p>
 
     <div class="grid cols-3">
-      <div class="card"><h3>Search-friendly structure</h3><p>Pages are organized so they’re easy to crawl and easy to read.</p></div>
-      <div class="card"><h3>Local SEO support</h3><p>Perfect for service businesses with city/area targeting.</p></div>
-      <div class="card"><h3>Performance mindset</h3><p>Fast pages reduce bounce and improve conversion.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.locations.card1.title">Uniform experience</h3><p data-i18n="demo.premium.services.locations.card1.body">Your service feels the same in every city.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.locations.card2.title">Specialist teams</h3><p data-i18n="demo.premium.services.locations.card2.body">Master barbers for each signature style.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.locations.card3.title">Luxury amenities</h3><p data-i18n="demo.premium.services.locations.card3.body">Complimentary beverage bar and lounge.</p></div>
     </div>
   </div>
 </section>
 
 <section class="section color-d reveal">
   <div class="container" style="text-align:left;">
-    <h2>Ads + marketing sections</h2>
-    <p class="sub" style="margin-left:0;">
-      Premium sites are built to support traffic: landing sections, proof, and lead capture.
+    <h2 data-i18n="demo.premium.services.branding.title">Brand-ready details</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.services.branding.sub">
+      High-end experiences need marketing pages that match the club feel.
     </p>
 
     <div class="grid cols-3">
-      <div class="card"><h3>Landing pages</h3><p>Focused sections for ads so clicks turn into calls/forms.</p></div>
-      <div class="card"><h3>Offer clarity</h3><p>Visitors instantly understand what you do and why you’re worth it.</p></div>
-      <div class="card"><h3>Lead capture</h3><p>Mobile-friendly intake forms that don’t feel overwhelming.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.branding.card1.title">Member onboarding</h3><p data-i18n="demo.premium.services.branding.card1.body">Welcome flows that feel exclusive.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.branding.card2.title">Offer clarity</h3><p data-i18n="demo.premium.services.branding.card2.body">Benefits explained without fluff.</p></div>
+      <div class="card"><h3 data-i18n="demo.premium.services.branding.card3.title">Concierge support</h3><p data-i18n="demo.premium.services.branding.card3.body">Fast support channels for members.</p></div>
     </div>
 
     <div class="btn-row" style="justify-content:flex-start;">
-      <a class="btn accent" href="pricing.html">See Pricing</a>
-      <a class="btn ghost" href="contact.html">Start</a>
+      <a class="btn accent" href="pricing.html" data-i18n="demo.premium.ads.cta.primary">See Pricing</a>
+      <a class="btn ghost" href="contact.html" data-i18n="demo.premium.ads.cta.secondary">Start</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Lumen Creative Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Atlas Grooming Club • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>

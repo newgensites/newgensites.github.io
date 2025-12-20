@@ -3,81 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop All • Harbor & Coast Outfitters</title>
+  <title>Shop All • Pulse Sound Lab</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
 <div class="top-banner">
   <div class="marquee">
-    <span>
-      CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED •
-      CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED •
-    </span>
+    <span data-i18n="demo.growth.banner">STUDIO SALE — 20% OFF NO CODE NEEDED • STUDIO SALE — 20% OFF NO CODE NEEDED • STUDIO SALE — 20% OFF NO CODE NEEDED •</span>
   </div>
 </div>
 
 <header class="storebar">
   <div class="store-inner">
-    <div class="store-logo"><span class="mark">HC</span> Harbor & Coast Outfitters</div>
+    <div class="store-logo"><span class="mark">PS</span> Pulse Sound Lab</div>
 
     <ul class="store-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Shop All</a></li>
-      <li><a href="track.html">Track Your Order</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="demo.growth.nav.shop">Shop All</a></li>
+      <li><a href="track.html" data-i18n="demo.growth.nav.track">Track Your Order</a></li>
+      <li><a href="contact.html" data-i18n="demo.growth.nav.contact">Contact</a></li>
+      <li><a href="../index.html" data-i18n="demo.basic.back">← Back</a></li>
     </ul>
 
     <div class="store-actions">
-      <div class="search"><span>🔍</span><input placeholder="Search products…" /></div>
-      <a class="iconbtn" href="contact.html">Account</a>
-      <a class="iconbtn" href="services.html">Cart <span class="badge">0</span></a>
+      <div class="search"><span>🔍</span><input placeholder="Search products…" data-i18n-placeholder="demo.growth.search" /></div>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="contact.html" data-i18n="demo.growth.account">Account</a>
+      <a class="iconbtn" href="services.html" data-i18n="demo.growth.cart">Cart <span class="badge">0</span></a>
     </div>
   </div>
 </header>
 
 <section class="section light reveal" style="padding-top:48px;">
   <div class="container">
-    <h2>Shop All</h2>
-    <p class="sub">Coastal apparel and travel gear designed in Fort Lauderdale.</p>
+    <h2 data-i18n="demo.growth.services.title">Shop All</h2>
+    <p class="sub" data-i18n="demo.growth.services.sub">Audio gear, vinyl, and limited-run merch curated in Miami.</p>
 
     <div class="products">
-      <div class="product">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1520975682031-a3a2b7f3f4f3?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="info"><div class="kicker">Cap</div><h3>Marina Classic Cap</h3><div class="price">$34</div></div>
+      <div class="product" data-product data-title="Studio 88 Controller" data-price="$429" data-category="Controller" data-image="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Controller</div><h3>Studio 88 Controller</h3><div class="price">$429</div></div>
       </div>
-      <div class="product">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1520975892740-9d9f6cc0e1bb?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="info"><div class="kicker">Cap</div><h3>Midnight Harbor Cap</h3><div class="price">$34</div></div>
+      <div class="product" data-product data-title="Pulse Studio Headphones" data-price="$189" data-category="Headphones" data-image="https://images.unsplash.com/photo-1512314889357-e157c22f938d?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1512314889357-e157c22f938d?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Headphones</div><h3>Pulse Studio Headphones</h3><div class="price">$189</div></div>
       </div>
-      <div class="product">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1520975874030-0aaf1e9a5e11?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="info"><div class="kicker">Accessories</div><h3>Harbor Tote</h3><div class="price">$28</div></div>
+      <div class="product" data-product data-title="Analog Warmth Preamp" data-price="$399" data-category="Preamp" data-image="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Preamp</div><h3>Analog Warmth Preamp</h3><div class="price">$399</div></div>
       </div>
-      <div class="product">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1520975862284-3c0e1f0d9e2d?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="info"><div class="kicker">Tee</div><h3>Coastline Tee</h3><div class="price">$42</div></div>
+      <div class="product" data-product data-title="Midnight Vinyl Pack" data-price="$72" data-category="Vinyl" data-image="https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Vinyl</div><h3>Midnight Vinyl Pack</h3><div class="price">$72</div></div>
       </div>
-      <div class="product">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1520975947968-96b1c55c2e1e?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="info"><div class="kicker">Hoodie</div><h3>Seabreeze Hoodie</h3><div class="price">$78</div></div>
+      <div class="product" data-product data-title="Waveform Tote" data-price="$28" data-category="Merch" data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Merch</div><h3>Waveform Tote</h3><div class="price">$28</div></div>
       </div>
-      <div class="product">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1520975748423-9dbb5dd01cf0?auto=format&fit=crop&w=1200&q=70');"></div>
-        <div class="info"><div class="kicker">Bundle</div><h3>Weekend Starter Pack</h3><div class="price">$96</div></div>
+      <div class="product" data-product data-title="Studio Session Bundle" data-price="$210" data-category="Bundle" data-image="https://images.unsplash.com/photo-1512446733611-9099a758e3e0?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1512446733611-9099a758e3e0?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Bundle</div><h3>Studio Session Bundle</h3><div class="price">$210</div></div>
+      </div>
+      <div class="product" data-product data-title="Analog Drum Pad" data-price="$159" data-category="Pads" data-image="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Pads</div><h3>Analog Drum Pad</h3><div class="price">$159</div></div>
+      </div>
+      <div class="product" data-product data-title="Focus Mic Kit" data-price="$249" data-category="Mic" data-image="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Mic</div><h3>Focus Mic Kit</h3><div class="price">$249</div></div>
+      </div>
+      <div class="product" data-product data-title="Waveform Hoodie" data-price="$84" data-category="Apparel" data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Apparel</div><h3>Waveform Hoodie</h3><div class="price">$84</div></div>
       </div>
     </div>
 
     <div class="btn-row">
-      <a class="btn" href="track.html">Track Your Order</a>
-      <a class="btn ghost" href="contact.html">Contact</a>
+      <a class="btn" href="track.html" data-i18n="demo.growth.hero.cta.track">Track Your Order</a>
+      <a class="btn ghost" href="contact.html" data-i18n="demo.growth.hero.cta.contact">Contact</a>
     </div>
   </div>
 </section>
 
+<div class="product-modal" id="product-modal">
+  <div class="modal-card">
+    <div class="modal-image"></div>
+    <div class="modal-body">
+      <span class="kicker modal-category" data-i18n="demo.growth.modal.category">Category</span>
+      <h3 class="modal-title">Product</h3>
+      <div class="price modal-price">$0</div>
+      <p class="sub" style="margin:10px 0 0;" data-i18n="demo.growth.modal.note">Studio-ready gear, curated in limited runs.</p>
+      <div class="btn-row start">
+        <button class="btn" type="button" data-i18n="demo.growth.modal.cta">Add to Cart</button>
+        <button class="btn ghost" type="button" data-modal-close data-i18n="demo.growth.modal.close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer>
-  <p>&copy; 2025 Harbor &amp; Coast Outfitters • Demo by NewGen</p>
+  <p>&copy; 2025 Pulse Sound Lab • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>

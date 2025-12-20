@@ -11,52 +11,55 @@
 <nav class="navbar">
   <div class="nav-inner">
     <div class="logo">NewGen Digital Studio</div>
-    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <button class="nav-toggle" aria-label="Open menu" data-i18n="nav.menu">Menu</button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="packages.html">Packages</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="contact.html" class="btn small">Get a Quote</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="packages.html" data-i18n="nav.packages">Packages</a></li>
+      <li><a href="work.html" data-i18n="nav.work">Work</a></li>
+      <li><a href="contact.html" class="btn small" data-i18n="nav.get-quote">Get a Quote</a></li>
     </ul>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+    </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
   <div class="container hero-surface">
-    <div class="kicker">Fast response • Simple process</div>
-    <h1>Get a quote</h1>
-    <p>Tell us a bit about your business and we’ll respond with next steps. (Form is demo-ready; we can connect it to email next.)</p>
+    <div class="kicker" data-i18n="contact.hero.kicker">Fast response • Simple process</div>
+    <h1 data-i18n="contact.hero.title">Get a quote</h1>
+    <p data-i18n="contact.hero.body">Tell us a bit about your business and we’ll respond with next steps. (Form is demo-ready; we can connect it to email next.)</p>
 
     <div class="btn-row">
-      <a class="btn accent" href="tel:+15551234567">Call</a>
-      <a class="btn ghost" href="sms:+15551234567">Text</a>
-      <a class="btn ghost" href="mailto:hello@example.com">Email</a>
+      <a class="btn accent" href="tel:+15551234567" data-i18n="contact.hero.cta.call">Call</a>
+      <a class="btn ghost" href="sms:+15551234567" data-i18n="contact.hero.cta.text">Text</a>
+      <a class="btn ghost" href="mailto:hello@example.com" data-i18n="contact.hero.cta.email">Email</a>
     </div>
   </div>
 </header>
 
 <section class="section light reveal">
   <div class="container">
-    <h2>Project details</h2>
-    <p class="sub">Quick form, quick response. Replace the contact info above with your real number/email anytime.</p>
+    <h2 data-i18n="contact.form.title">Project details</h2>
+    <p class="sub" data-i18n="contact.form.sub">Quick form, quick response. Replace the contact info above with your real number/email anytime.</p>
 
     <form class="form">
       <div class="form-row">
-        <input class="input" placeholder="Full name" />
-        <input class="input" placeholder="Phone or email" />
+        <input class="input" placeholder="Full name" data-i18n-placeholder="contact.form.name" />
+        <input class="input" placeholder="Phone or email" data-i18n-placeholder="contact.form.contact" />
       </div>
-      <input class="input" placeholder="Business name" />
-      <textarea class="textarea" placeholder="What do you need built and what’s the goal?"></textarea>
-      <button class="btn" type="button">Submit (Demo)</button>
-      <div class="helper">Next upgrade: I’ll connect this to your inbox so it actually sends messages.</div>
+      <input class="input" placeholder="Business name" data-i18n-placeholder="contact.form.business" />
+      <textarea class="textarea" placeholder="What do you need built and what’s the goal?" data-i18n-placeholder="contact.form.message"></textarea>
+      <button class="btn" type="button" data-i18n="contact.form.submit">Submit (Demo)</button>
+      <div class="helper" data-i18n="contact.form.helper">Next upgrade: I’ll connect this to your inbox so it actually sends messages.</div>
     </form>
 
     <div class="card" style="margin-top:26px;">
-      <h3>What happens next</h3>
+      <h3 data-i18n="contact.next.title">What happens next</h3>
       <ul class="list compact">
-        <li>Response within 24 hours on business days.</li>
-        <li>No obligation — you’ll get a clear recommendation first.</li>
-        <li>Include your city, service, and timeline for the fastest reply.</li>
+        <li data-i18n="contact.next.item1">Response within 24 hours on business days.</li>
+        <li data-i18n="contact.next.item2">No obligation — you’ll get a clear recommendation first.</li>
+        <li data-i18n="contact.next.item3">Include your city, service, and timeline for the fastest reply.</li>
       </ul>
     </div>
   </div>

@@ -3,137 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Start • Lumen Creative Studio</title>
-  <meta name="description" content="Lumen Creative Studio intake page for premium web design projects." />
+  <title>Contact • Atlas Grooming Club</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body style="--accent:#7c3aed;">
+<body style="--accent:#0f766e;">
 
 <nav class="navbar">
   <div class="nav-inner">
     <div class="logo">
-      <span class="logo-badge" style="background:#7c3aed;">LC</span>
-      Lumen Creative Studio
+      <span class="logo-badge" style="background:#0f766e;">AG</span>
+      <span data-i18n="demo.premium.brand">Atlas Grooming Club</span>
     </div>
-
-    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <button class="nav-toggle" aria-label="Open menu" data-i18n="nav.menu">Menu</button>
 
     <ul class="nav-links">
-      <li class="dd">
-        <a href="index.html#products">Products ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="index.html#templates"><strong>Templates</strong><span>Browse multiple styles.</span></a>
-            <a class="dd-item" href="index.html#domains"><strong>Domains</strong><span>Buy or connect one.</span></a>
-            <a class="dd-item" href="index.html#seo"><strong>SEO</strong><span>Show up on Google.</span></a>
-            <a class="dd-item" href="index.html#marketing"><strong>Marketing</strong><span>Grow repeat business.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li class="dd">
-        <a href="index.html#solutions">Solutions ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="services.html"><strong>Services</strong><span>What’s included.</span></a>
-            <a class="dd-item" href="work.html"><strong>Case Studies</strong><span>Proof pages.</span></a>
-            <a class="dd-item" href="pricing.html"><strong>Pricing</strong><span>Value clarity.</span></a>
-            <a class="dd-item" href="contact.html"><strong>Start</strong><span>Project intake.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="work.html">Templates</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="demo.premium.nav.services">Services</a></li>
+      <li><a href="work.html" data-i18n="demo.premium.nav.work">Styles</a></li>
+      <li><a href="pricing.html" data-i18n="demo.premium.nav.pricing">Pricing</a></li>
+      <li><a href="contact.html" data-i18n="demo.premium.nav.contact">Contact</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
     </ul>
 
     <div style="display:flex;gap:10px;align-items:center;">
-      <a class="iconbtn" href="#" aria-label="Language">🌐 EN</a>
-      <a class="iconbtn" href="pricing.html">Pricing</a>
-      <a class="btn small accent" href="contact.html">Get Started</a>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="work.html" data-i18n="demo.premium.view-proof">View Styles</a>
+      <a class="btn small accent" href="contact.html" data-i18n="nav.get-started">Get Started</a>
     </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
-  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #f2eaff, #ffffff);">
-    <div class="kicker">Premium intake • Miami, FL</div>
-    <h1>Start a project</h1>
-    <p>
-      A clean intake flow with clear next steps. We respond quickly and keep the process simple.
-    </p>
-
-    <div class="btn-row">
-      <a class="btn accent" href="mailto:hello@example.com">Email</a>
-      <a class="btn ghost" href="tel:+15551234567">Call</a>
-      <a class="btn ghost" href="sms:+15551234567">Text</a>
-    </div>
+  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #d4f4ee, #ffffff);">
+    <div class="kicker" data-i18n="demo.premium.contact.kicker">Concierge booking</div>
+    <h1 data-i18n="demo.premium.contact.title">Request your appointment.</h1>
+    <p data-i18n="demo.premium.contact.body">Tell us your preferred location and service. Our concierge will confirm availability.</p>
   </div>
 </header>
 
-<section class="section color-a reveal">
-  <div class="container" style="text-align:left;">
-    <h2>Project details</h2>
-    <p class="sub" style="margin-left:0;">Demo form (front-end). Next step is connecting to email + analytics tracking.</p>
+<section class="section light reveal">
+  <div class="container">
+    <h2 data-i18n="demo.premium.contact.form.title">Booking details</h2>
+    <p class="sub" data-i18n="demo.premium.contact.form.sub">Quick form, fast response, and priority booking for members.</p>
 
     <form class="form">
       <div class="form-row">
-        <input class="input" placeholder="Full name" />
-        <input class="input" placeholder="Email" />
+        <input class="input" placeholder="Full name" data-i18n-placeholder="demo.premium.contact.form.name" />
+        <input class="input" placeholder="Phone or email" data-i18n-placeholder="demo.premium.contact.form.contact" />
       </div>
       <div class="form-row">
-        <input class="input" placeholder="Business name" />
-        <input class="input" placeholder="Phone" />
+        <input class="input" placeholder="Preferred location" data-i18n-placeholder="demo.premium.contact.form.location" />
+        <input class="input" placeholder="Service type" data-i18n-placeholder="demo.premium.contact.form.service" />
       </div>
-      <input class="input" placeholder="Industry (dentist, law firm, brand, etc.)" />
-      <input class="input" placeholder="Pages needed (Home, Services, Pricing…)" />
-      <textarea class="textarea" placeholder="Your goal + timeline + any reference websites…"></textarea>
-      <button class="btn accent" type="button">Submit (Demo)</button>
-      <div class="helper">Replace the email/phone above with yours when you’re ready.</div>
+      <textarea class="textarea" placeholder="Tell us your preferred date/time" data-i18n-placeholder="demo.premium.contact.form.notes"></textarea>
+      <button class="btn" type="button" data-i18n="demo.premium.contact.form.submit">Submit (Demo)</button>
+      <div class="helper" data-i18n="demo.premium.contact.form.helper">Next step: connect this to your concierge team.</div>
     </form>
 
     <div class="card" style="margin-top:24px;">
-      <h3>What happens next</h3>
+      <h3 data-i18n="demo.premium.contact.next.title">What happens next</h3>
       <ul class="list compact">
-        <li>We reply within 24 hours with a scope recommendation.</li>
-        <li>No obligation — we’ll confirm goals and timeline first.</li>
-        <li>Include your city, industry, and priority pages for faster clarity.</li>
+        <li data-i18n="demo.premium.contact.next.item1">We confirm availability within 24 hours.</li>
+        <li data-i18n="demo.premium.contact.next.item2">Membership clients receive priority slots.</li>
+        <li data-i18n="demo.premium.contact.next.item3">Include your preferred dates for faster scheduling.</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="section color-b reveal">
-  <div class="container" style="text-align:left;">
-    <h2>FAQ</h2>
-    <p class="sub" style="margin-left:0;">Premium clients want clarity before they buy.</p>
-
-    <div class="faq">
-      <div class="faq-item">
-        <div class="faq-q">How fast can you launch? <span>+</span></div>
-        <div class="faq-a">It depends on pages, content, and approvals, but we keep the process organized and fast.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Can you match a reference site vibe? <span>+</span></div>
-        <div class="faq-a">Yes. Premium is built to match “platform-level” quality while keeping it brand-unique.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Do you help with domain + launch? <span>+</span></div>
-        <div class="faq-a">Yes. We can guide domain connection and final launch QA.</div>
-      </div>
-    </div>
-
-    <div class="btn-row" style="justify-content:flex-start;">
-      <a class="btn" href="pricing.html">See Pricing</a>
-      <a class="btn ghost" href="work.html">See Proof</a>
-    </div>
-  </div>
-</section>
-
 <footer>
-  <p>&copy; 2025 Lumen Creative Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Atlas Grooming Club • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>

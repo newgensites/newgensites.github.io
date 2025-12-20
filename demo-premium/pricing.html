@@ -3,148 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing • Lumen Creative Studio</title>
-  <meta name="description" content="Lumen Creative Studio pricing: premium web design packages." />
+  <title>Pricing • Atlas Grooming Club</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body style="--accent:#7c3aed;">
+<body style="--accent:#0f766e;">
 
 <nav class="navbar">
   <div class="nav-inner">
     <div class="logo">
-      <span class="logo-badge" style="background:#7c3aed;">LC</span>
-      Lumen Creative Studio
+      <span class="logo-badge" style="background:#0f766e;">AG</span>
+      <span data-i18n="demo.premium.brand">Atlas Grooming Club</span>
     </div>
-
-    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <button class="nav-toggle" aria-label="Open menu" data-i18n="nav.menu">Menu</button>
 
     <ul class="nav-links">
-      <li class="dd">
-        <a href="index.html#products">Products ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="index.html#templates"><strong>Templates</strong><span>Browse multiple styles.</span></a>
-            <a class="dd-item" href="index.html#domains"><strong>Domains</strong><span>Buy or connect one.</span></a>
-            <a class="dd-item" href="index.html#seo"><strong>SEO</strong><span>Show up on Google.</span></a>
-            <a class="dd-item" href="index.html#marketing"><strong>Marketing</strong><span>Grow repeat business.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li class="dd">
-        <a href="index.html#solutions">Solutions ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="services.html"><strong>Services</strong><span>What’s included.</span></a>
-            <a class="dd-item" href="work.html"><strong>Case Studies</strong><span>Proof pages.</span></a>
-            <a class="dd-item" href="pricing.html"><strong>Pricing</strong><span>Value clarity.</span></a>
-            <a class="dd-item" href="contact.html"><strong>Start</strong><span>Project intake.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="work.html">Templates</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="demo.premium.nav.services">Services</a></li>
+      <li><a href="work.html" data-i18n="demo.premium.nav.work">Styles</a></li>
+      <li><a href="pricing.html" data-i18n="demo.premium.nav.pricing">Pricing</a></li>
+      <li><a href="contact.html" data-i18n="demo.premium.nav.contact">Contact</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
     </ul>
 
     <div style="display:flex;gap:10px;align-items:center;">
-      <a class="iconbtn" href="#" aria-label="Language">🌐 EN</a>
-      <a class="iconbtn" href="work.html">Proof</a>
-      <a class="btn small accent" href="contact.html">Get Started</a>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="work.html" data-i18n="demo.premium.view-proof">View Styles</a>
+      <a class="btn small accent" href="contact.html" data-i18n="nav.get-started">Get Started</a>
     </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
-  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #f2eaff, #ffffff);">
-    <div class="kicker">Pricing • value clarity</div>
-    <h1>Pricing that makes the upgrade feel obvious.</h1>
-    <p>Our Miami-based team builds premium web systems that scale with your goals.</p>
-    <div class="btn-row">
-      <a class="btn accent" href="contact.html">Start a Project</a>
-      <a class="btn ghost" href="services.html">What’s Included</a>
-    </div>
+  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #d4f4ee, #ffffff);">
+    <div class="kicker" data-i18n="demo.premium.pricing.kicker">Membership pricing</div>
+    <h1 data-i18n="demo.premium.pricing.title">Plans built for regular grooming.</h1>
+    <p data-i18n="demo.premium.pricing.body">Choose a membership tier that matches your schedule and service cadence.</p>
   </div>
 </header>
 
-<section class="section color-a reveal">
-  <div class="container" style="text-align:left;">
-    <h2>Packages</h2>
-    <p class="sub" style="margin-left:0;">Demo numbers — replace with your real pricing anytime.</p>
-
+<section class="section light reveal">
+  <div class="container">
     <div class="grid cols-3">
       <div class="card">
-        <h3>Starter</h3>
-        <p>2–3 pages • clean structure</p>
-        <hr class="sep">
-        <p><strong>Best for:</strong> simple brands needing a clean presence.</p>
-        <ul class="ul">
-          <li>Clean hero + CTA</li>
-          <li>Services page</li>
-          <li>Mobile-first layout</li>
+        <h3 data-i18n="demo.premium.pricing.card1.title">Core Member</h3>
+        <div class="price">$110</div>
+        <div class="price-sub" data-i18n="demo.premium.pricing.card1.sub">Monthly cut + beard tidy.</div>
+        <ul class="list compact">
+          <li data-i18n="demo.premium.pricing.card1.item1">1 signature cut</li>
+          <li data-i18n="demo.premium.pricing.card1.item2">Beard line-up</li>
+          <li data-i18n="demo.premium.pricing.card1.item3">Priority booking</li>
         </ul>
-        <div class="btn-row" style="justify-content:flex-start;">
-          <a class="btn ghost" href="contact.html">Ask</a>
+        <div class="btn-row start">
+          <a class="btn" href="contact.html" data-i18n="demo.premium.pricing.cta">Join Core</a>
         </div>
       </div>
-
-      <div class="card" style="border:2px solid #000;">
-        <h3>Pro</h3>
-        <p>6 pages • proof + pricing</p>
-        <hr class="sep">
-        <p><strong>Best for:</strong> serious business owners who want a platform feel.</p>
-        <ul class="ul">
-          <li>Design system feel</li>
-          <li>Proof page / case studies</li>
-          <li>Pricing clarity</li>
-          <li>Better conversion flow</li>
+      <div class="card best-value">
+        <span class="tag" data-i18n="packages.growth.tag">Best Value</span>
+        <h3 data-i18n="demo.premium.pricing.card2.title">Signature Member</h3>
+        <div class="price">$180</div>
+        <div class="price-sub" data-i18n="demo.premium.pricing.card2.sub">Two visits + ritual shave.</div>
+        <ul class="list compact">
+          <li data-i18n="demo.premium.pricing.card2.item1">2 premium services</li>
+          <li data-i18n="demo.premium.pricing.card2.item2">Ritual shave</li>
+          <li data-i18n="demo.premium.pricing.card2.item3">VIP lounge access</li>
         </ul>
-        <div class="btn-row" style="justify-content:flex-start;">
-          <a class="btn accent" href="contact.html">Start</a>
+        <div class="btn-row start">
+          <a class="btn accent" href="contact.html" data-i18n="demo.premium.pricing.cta">Join Signature</a>
         </div>
       </div>
-
-      <div class="card" style="background:#000;color:#fff;">
-        <h3>Custom</h3>
-        <p>Platform-level • integrations</p>
-        <hr class="sep" style="border-top-color:rgba(255,255,255,.18);">
-        <p><strong>Best for:</strong> brands that need advanced features.</p>
-        <ul class="ul" style="color:#fff;">
-          <li>Custom pages + flows</li>
-          <li>Booking, payments, forms</li>
-          <li>Analytics + tracking</li>
-          <li>Marketing sections</li>
+      <div class="card">
+        <h3 data-i18n="demo.premium.pricing.card3.title">Atlas Elite</h3>
+        <div class="price">$320</div>
+        <div class="price-sub" data-i18n="demo.premium.pricing.card3.sub">Unlimited visits + concierge.</div>
+        <ul class="list compact">
+          <li data-i18n="demo.premium.pricing.card3.item1">Unlimited grooming</li>
+          <li data-i18n="demo.premium.pricing.card3.item2">Private suite access</li>
+          <li data-i18n="demo.premium.pricing.card3.item3">Personal concierge</li>
         </ul>
-        <div class="btn-row" style="justify-content:flex-start;">
-          <a class="btn" href="contact.html" style="background:#fff;color:#000;">Talk to us</a>
+        <div class="btn-row start">
+          <a class="btn" href="contact.html" data-i18n="demo.premium.pricing.cta">Join Elite</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section color-b reveal">
+<section class="section reveal">
   <div class="container" style="text-align:left;">
-    <h2>What premium buys</h2>
-    <p class="sub" style="margin-left:0;">This is the difference clients feel on the first click.</p>
-
-    <div class="grid cols-3">
-      <div class="card"><h3>Depth</h3><p>Multiple pages with clear intent and hierarchy.</p></div>
-      <div class="card"><h3>Consistency</h3><p>A system, not random sections.</p></div>
-      <div class="card"><h3>Proof</h3><p>Case studies + pricing pages build confidence.</p></div>
-    </div>
-
-    <div class="btn-row" style="justify-content:flex-start;">
-      <a class="btn" href="work.html">See Proof</a>
-      <a class="btn ghost" href="contact.html">Start</a>
+    <h2 data-i18n="demo.premium.pricing.cta.title">Need a private membership plan?</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.pricing.cta.sub">We tailor corporate and executive memberships for teams.</p>
+    <div class="btn-row start">
+      <a class="btn accent" href="contact.html" data-i18n="demo.premium.pricing.cta.primary">Contact Concierge</a>
+      <a class="btn ghost" href="services.html" data-i18n="demo.premium.pricing.cta.secondary">View Services</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Lumen Creative Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Atlas Grooming Club • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>

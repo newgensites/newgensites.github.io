@@ -3,81 +3,177 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harbor & Coast Outfitters • Fort Lauderdale, FL</title>
-  <meta name="description" content="Harbor & Coast Outfitters: a coastal apparel store with product grid, tracking, and contact flow." />
+  <title>Pulse Sound Lab • Miami, FL</title>
+  <meta name="description" content="Pulse Sound Lab: a modern studio and storefront with product grid, track order, and contact flow." />
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
 <div class="top-banner">
   <div class="marquee">
-    <span>
-      CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED •
-      CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED •
-    </span>
+    <span data-i18n="demo.growth.banner">STUDIO SALE — 20% OFF NO CODE NEEDED • STUDIO SALE — 20% OFF NO CODE NEEDED • STUDIO SALE — 20% OFF NO CODE NEEDED •</span>
   </div>
 </div>
 
 <header class="storebar">
   <div class="store-inner">
     <div class="store-logo">
-      <span class="mark">HC</span>
-      Harbor & Coast Outfitters
+      <span class="mark">PS</span>
+      Pulse Sound Lab
     </div>
 
     <ul class="store-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Shop All</a></li>
-      <li><a href="track.html">Track Your Order</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="demo.growth.nav.shop">Shop All</a></li>
+      <li><a href="track.html" data-i18n="demo.growth.nav.track">Track Your Order</a></li>
+      <li><a href="contact.html" data-i18n="demo.growth.nav.contact">Contact</a></li>
+      <li><a href="../index.html" data-i18n="demo.basic.back">← Back</a></li>
     </ul>
 
     <div class="store-actions">
       <div class="search">
         <span>🔍</span>
-        <input placeholder="Search products…" />
+        <input placeholder="Search products…" data-i18n-placeholder="demo.growth.search" />
       </div>
-      <a class="iconbtn" href="contact.html">Account</a>
-      <a class="iconbtn" href="services.html">Cart <span class="badge">0</span></a>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="contact.html" data-i18n="demo.growth.account">Account</a>
+      <a class="iconbtn" href="services.html" data-i18n="demo.growth.cart">Cart <span class="badge">0</span></a>
     </div>
   </div>
 </header>
 
 <section class="section reveal" style="padding-top:48px;">
   <div class="container">
-    <div class="hero-image"
-      style="background-image:url('https://images.unsplash.com/photo-1520975958225-5c5c6f43a3f5?auto=format&fit=crop&w=1800&q=70');background-size:cover;background-position:center;">
+    <div class="hero-image" style="background-image:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=2000&q=70');background-size:cover;background-position:center;">
       <div class="overlay"></div>
       <div class="content">
-        <div class="kicker" style="color:rgba(255,255,255,.85);">Coastal lifestyle gear • Fort Lauderdale, FL</div>
-        <h1>Coastal essentials built for Florida living.</h1>
-        <p>Based in Fort Lauderdale, we design apparel and travel gear for coastal weekends. Home + Shop All + Track Order + Contact gives this brand a real storefront feel.</p>
+        <div class="kicker" style="color:rgba(255,255,255,.85);" data-i18n="demo.growth.hero.kicker">Music studio + storefront • Miami, FL</div>
+        <h1 data-i18n="demo.growth.hero.title">Boutique sound gear for modern artists.</h1>
+        <p data-i18n="demo.growth.hero.body">Pulse Sound Lab blends studio sessions with a curated shop of audio gear, vinyl, and merch. A full hero, clickable products, and real navigation make this demo feel like a live brand.</p>
         <div class="btn-row" style="justify-content:flex-start;">
-          <a class="btn accent" href="services.html">Shop All</a>
-          <a class="btn ghost" href="track.html" style="border-color:rgba(255,255,255,.3);color:#fff;">Track Order</a>
-          <a class="btn ghost" href="contact.html" style="border-color:rgba(255,255,255,.3);color:#fff;">Contact</a>
+          <a class="btn accent" href="#latest" data-i18n="demo.growth.hero.cta.shop">Shop All</a>
+          <a class="btn ghost" href="track.html" style="border-color:rgba(255,255,255,.3);color:#fff;" data-i18n="demo.growth.hero.cta.track">Track Order</a>
+          <a class="btn ghost" href="contact.html" style="border-color:rgba(255,255,255,.3);color:#fff;" data-i18n="demo.growth.hero.cta.contact">Contact</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section light reveal">
-  <div class="container">
-    <h2>Why this feels real</h2>
-    <p class="sub">Real business details + store UX = instant trust.</p>
+<section id="latest" class="section light reveal">
+  <div class="container" style="text-align:left;">
+    <h2 data-i18n="demo.growth.latest.title">Latest Drop</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.growth.latest.sub">New arrivals curated for sessions, tours, and home studios.</p>
 
-    <div class="grid cols-3">
-      <div class="card"><h3>Local brand story</h3><p>Fort Lauderdale-based gear inspired by ocean weekends.</p></div>
-      <div class="card"><h3>Support hours</h3><p>Mon–Fri: 9am–5pm EST • support@harborcoast.co</p></div>
-      <div class="card"><h3>Track order page</h3><p>Self-serve updates that reduce support emails.</p></div>
+    <div class="products">
+      <div class="product" data-product data-title="Studio 88 Controller" data-price="$429" data-category="Controller" data-image="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Controller</div><h3>Studio 88 Controller</h3><div class="price">$429</div></div>
+      </div>
+      <div class="product" data-product data-title="Pulse Studio Headphones" data-price="$189" data-category="Headphones" data-image="https://images.unsplash.com/photo-1512314889357-e157c22f938d?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1512314889357-e157c22f938d?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Headphones</div><h3>Pulse Studio Headphones</h3><div class="price">$189</div></div>
+      </div>
+      <div class="product" data-product data-title="Analog Warmth Preamp" data-price="$399" data-category="Preamp" data-image="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Preamp</div><h3>Analog Warmth Preamp</h3><div class="price">$399</div></div>
+      </div>
+      <div class="product" data-product data-title="Midnight Vinyl Pack" data-price="$72" data-category="Vinyl" data-image="https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1461360228754-6e81c478b882?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Vinyl</div><h3>Midnight Vinyl Pack</h3><div class="price">$72</div></div>
+      </div>
+      <div class="product" data-product data-title="Waveform Tote" data-price="$28" data-category="Merch" data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Merch</div><h3>Waveform Tote</h3><div class="price">$28</div></div>
+      </div>
+      <div class="product" data-product data-title="Studio Session Bundle" data-price="$210" data-category="Bundle" data-image="https://images.unsplash.com/photo-1512446733611-9099a758e3e0?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1512446733611-9099a758e3e0?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Bundle</div><h3>Studio Session Bundle</h3><div class="price">$210</div></div>
+      </div>
+      <div class="product extra hidden" data-product data-title="Analog Drum Pad" data-price="$159" data-category="Pads" data-image="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Pads</div><h3>Analog Drum Pad</h3><div class="price">$159</div></div>
+      </div>
+      <div class="product extra hidden" data-product data-title="Focus Mic Kit" data-price="$249" data-category="Mic" data-image="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Mic</div><h3>Focus Mic Kit</h3><div class="price">$249</div></div>
+      </div>
+      <div class="product extra hidden" data-product data-title="Tour-Ready Gig Bag" data-price="$74" data-category="Accessories" data-image="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Accessories</div><h3>Tour-Ready Gig Bag</h3><div class="price">$74</div></div>
+      </div>
+      <div class="product extra hidden" data-product data-title="Studio Candle" data-price="$38" data-category="Merch" data-image="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Merch</div><h3>Studio Candle</h3><div class="price">$38</div></div>
+      </div>
+      <div class="product extra hidden" data-product data-title="Midnight Cable Set" data-price="$54" data-category="Cables" data-image="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Cables</div><h3>Midnight Cable Set</h3><div class="price">$54</div></div>
+      </div>
+      <div class="product extra hidden" data-product data-title="Waveform Hoodie" data-price="$84" data-category="Apparel" data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1600&q=70">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=70');"></div>
+        <div class="info"><div class="kicker">Apparel</div><h3>Waveform Hoodie</h3><div class="price">$84</div></div>
+      </div>
+    </div>
+
+    <div class="btn-row start">
+      <button class="btn" type="button" data-load-more data-i18n="demo.growth.shopall">Shop All</button>
+      <a class="btn ghost" href="services.html" data-i18n="demo.growth.services.title">Shop All</a>
     </div>
   </div>
 </section>
 
+<section class="section reveal">
+  <div class="container">
+    <div class="section-intro">
+      <h2 data-i18n="demo.growth.why.title">Why this feels real</h2>
+      <p class="sub" data-i18n="demo.growth.why.sub">Real business details + store UX = instant trust.</p>
+    </div>
+
+    <div class="grid cols-3">
+      <div class="card"><h3 data-i18n="demo.growth.why.card1.title">Local brand story</h3><p data-i18n="demo.growth.why.card1.body">Collections designed in Miami for musicians and creators.</p></div>
+      <div class="card"><h3 data-i18n="demo.growth.why.card2.title">Support hours</h3><p data-i18n="demo.growth.why.card2.body">Mon–Fri: 9am–6pm EST • support@pulsesoundlab.com</p></div>
+      <div class="card"><h3 data-i18n="demo.growth.why.card3.title">Track order page</h3><p data-i18n="demo.growth.why.card3.body">Tracking flow reduces support tickets.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section light reveal">
+  <div class="container" style="text-align:left;">
+    <h2 data-i18n="demo.growth.visit.title">Visit the studio</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.growth.visit.sub">Book a listening session or pick up orders in our Miami showroom.</p>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <h3 data-i18n="demo.growth.visit.card1.title">Showroom hours</h3>
+        <p data-i18n="demo.growth.visit.card1.body">Mon–Sat: 10am–7pm • Wynwood, Miami</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="demo.growth.visit.card2.title">Studio sessions</h3>
+        <p data-i18n="demo.growth.visit.card2.body">Hourly sessions, engineers on-site, and private booths.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="product-modal" id="product-modal">
+  <div class="modal-card">
+    <div class="modal-image"></div>
+    <div class="modal-body">
+      <span class="kicker modal-category" data-i18n="demo.growth.modal.category">Category</span>
+      <h3 class="modal-title">Product</h3>
+      <div class="price modal-price">$0</div>
+      <p class="sub" style="margin:10px 0 0;" data-i18n="demo.growth.modal.note">Studio-ready gear, curated in limited runs.</p>
+      <div class="btn-row start">
+        <button class="btn" type="button" data-i18n="demo.growth.modal.cta">Add to Cart</button>
+        <button class="btn ghost" type="button" data-modal-close data-i18n="demo.growth.modal.close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer>
-  <p>&copy; 2025 Harbor &amp; Coast Outfitters • Demo by NewGen</p>
+  <p>&copy; 2025 Pulse Sound Lab • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>

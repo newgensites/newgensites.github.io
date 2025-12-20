@@ -3,113 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About • Lumen Creative Studio</title>
-  <meta name="description" content="About Lumen Creative Studio: Miami-based web and brand studio." />
+  <title>About • Atlas Grooming Club</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body style="--accent:#7c3aed;">
+<body style="--accent:#0f766e;">
 
 <nav class="navbar">
   <div class="nav-inner">
     <div class="logo">
-      <span class="logo-badge" style="background:#7c3aed;">LC</span>
-      Lumen Creative Studio
+      <span class="logo-badge" style="background:#0f766e;">AG</span>
+      <span data-i18n="demo.premium.brand">Atlas Grooming Club</span>
     </div>
-
-    <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    <button class="nav-toggle" aria-label="Open menu" data-i18n="nav.menu">Menu</button>
 
     <ul class="nav-links">
-      <li class="dd">
-        <a href="index.html#products">Products ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="index.html#templates"><strong>Templates</strong><span>Browse multiple styles.</span></a>
-            <a class="dd-item" href="index.html#domains"><strong>Domains</strong><span>Buy or connect one.</span></a>
-            <a class="dd-item" href="index.html#seo"><strong>SEO</strong><span>Show up on Google.</span></a>
-            <a class="dd-item" href="index.html#marketing"><strong>Marketing</strong><span>Grow repeat business.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li class="dd">
-        <a href="index.html#solutions">Solutions ▾</a>
-        <div class="dd-panel">
-          <div class="dd-grid">
-            <a class="dd-item" href="services.html"><strong>Services</strong><span>What’s included.</span></a>
-            <a class="dd-item" href="work.html"><strong>Case Studies</strong><span>Proof pages.</span></a>
-            <a class="dd-item" href="pricing.html"><strong>Pricing</strong><span>Value clarity.</span></a>
-            <a class="dd-item" href="contact.html"><strong>Start</strong><span>Project intake.</span></a>
-          </div>
-        </div>
-      </li>
-
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="work.html">Templates</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="demo.premium.nav.services">Services</a></li>
+      <li><a href="work.html" data-i18n="demo.premium.nav.work">Styles</a></li>
+      <li><a href="pricing.html" data-i18n="demo.premium.nav.pricing">Pricing</a></li>
+      <li><a href="contact.html" data-i18n="demo.premium.nav.contact">Contact</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
     </ul>
 
     <div style="display:flex;gap:10px;align-items:center;">
-      <a class="iconbtn" href="#" aria-label="Language">🌐 EN</a>
-      <a class="iconbtn" href="work.html">Proof</a>
-      <a class="btn small accent" href="contact.html">Get Started</a>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="work.html" data-i18n="demo.premium.view-proof">View Styles</a>
+      <a class="btn small accent" href="contact.html" data-i18n="nav.get-started">Get Started</a>
     </div>
   </div>
 </nav>
 
 <header class="hero reveal" style="padding-bottom:40px;">
-  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #f2eaff, #ffffff);">
-    <div class="kicker">About • Miami, FL</div>
-    <h1>People buy from brands they trust.</h1>
-    <p>
-      Lumen Creative Studio is a Miami-based team focused on clarity, conversion, and modern design.
-      We help service businesses and studios look established online.
-    </p>
-    <div class="btn-row">
-      <a class="btn accent" href="contact.html">Start a Project</a>
-      <a class="btn ghost" href="services.html">Services</a>
-    </div>
+  <div class="container hero-surface" style="background:radial-gradient(1200px 700px at 30% 0%, #d4f4ee, #ffffff);">
+    <div class="kicker" data-i18n="demo.premium.about.kicker">About Atlas</div>
+    <h1 data-i18n="demo.premium.about.title">A grooming club built on precision and hospitality.</h1>
+    <p data-i18n="demo.premium.about.body">We combine classic barbering with modern service, offering multi-location access and a private club atmosphere.</p>
   </div>
 </header>
 
-<section class="section color-a reveal">
+<section class="section light reveal">
   <div class="container" style="text-align:left;">
-    <h2>Our approach</h2>
-    <p class="sub" style="margin-left:0;">Clarity first. Then design. Then conversion.</p>
+    <h2 data-i18n="demo.premium.about.story.title">Our story</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.about.story.sub">Atlas started in Miami with a mission to elevate the barber experience into a full-service club.</p>
 
-    <div class="grid cols-3">
-      <div class="card"><h3>Strategy</h3><p>We define the offer, audience, and what the site needs to accomplish.</p></div>
-      <div class="card"><h3>System</h3><p>We build a consistent design system so every page feels premium.</p></div>
-      <div class="card"><h3>Launch</h3><p>We QA on mobile, test links/forms, and deploy clean.</p></div>
-    </div>
-
-    <div class="gallery">
-      <div class="tile span-6" style="background-image:url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=70');"></div>
-      <div class="tile span-6" style="background-image:url('https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1600&q=70');"></div>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3 data-i18n="demo.premium.about.story.card1.title">Design-led spaces</h3>
+        <p data-i18n="demo.premium.about.story.card1.body">Modern interiors with private suites, lounge seating, and curated sound.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="demo.premium.about.story.card2.title">Team of specialists</h3>
+        <p data-i18n="demo.premium.about.story.card2.body">Master barbers trained in classic and editorial styles.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section color-b reveal">
+<section class="section reveal">
   <div class="container" style="text-align:left;">
-    <h2>What premium clients care about</h2>
-    <p class="sub" style="margin-left:0;">The site should communicate this instantly.</p>
-
+    <h2 data-i18n="demo.premium.about.locations.title">Locations</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.premium.about.locations.sub">Flagship studios in Miami, Fort Lauderdale, and West Palm Beach.</p>
     <div class="grid cols-3">
-      <div class="card"><h3>Trust</h3><p>Proof pages + consistent design reduces skepticism.</p></div>
-      <div class="card"><h3>Quality</h3><p>Spacing, typography, and visuals make it feel expensive.</p></div>
-      <div class="card"><h3>Clarity</h3><p>Visitors always know what to do next.</p></div>
-    </div>
-
-    <div class="btn-row" style="justify-content:flex-start;">
-      <a class="btn" href="work.html">See Proof</a>
-      <a class="btn ghost" href="pricing.html">Pricing</a>
+      <div class="card"><h3>Miami</h3><p data-i18n="demo.premium.about.locations.card1.body">Wynwood • Mon–Sat 9am–7pm</p></div>
+      <div class="card"><h3>Fort Lauderdale</h3><p data-i18n="demo.premium.about.locations.card2.body">Las Olas • Mon–Sat 9am–7pm</p></div>
+      <div class="card"><h3>West Palm</h3><p data-i18n="demo.premium.about.locations.card3.body">Clematis • Tue–Sun 10am–6pm</p></div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Lumen Creative Studio • Demo by NewGen</p>
+  <p>&copy; 2025 Atlas Grooming Club • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>

@@ -3,66 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Track Your Order • Harbor & Coast Outfitters</title>
+  <title>Track Your Order • Pulse Sound Lab</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
 <div class="top-banner">
   <div class="marquee">
-    <span>
-      CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED •
-      CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED • CHRISTMAS SALE — 25% OFF NO CODE NEEDED •
-    </span>
+    <span data-i18n="demo.growth.banner">STUDIO SALE — 20% OFF NO CODE NEEDED • STUDIO SALE — 20% OFF NO CODE NEEDED • STUDIO SALE — 20% OFF NO CODE NEEDED •</span>
   </div>
 </div>
 
 <header class="storebar">
   <div class="store-inner">
-    <div class="store-logo"><span class="mark">HC</span> Harbor & Coast Outfitters</div>
+    <div class="store-logo"><span class="mark">PS</span> Pulse Sound Lab</div>
 
     <ul class="store-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Shop All</a></li>
-      <li><a href="track.html">Track Your Order</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="../index.html">← Back</a></li>
+      <li><a href="index.html" data-i18n="demo.growth.nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="demo.growth.nav.shop">Shop All</a></li>
+      <li><a href="track.html" data-i18n="demo.growth.nav.track">Track Your Order</a></li>
+      <li><a href="contact.html" data-i18n="demo.growth.nav.contact">Contact</a></li>
+      <li><a href="../index.html" data-i18n="demo.basic.back">← Back</a></li>
     </ul>
 
     <div class="store-actions">
-      <div class="search"><span>🔍</span><input placeholder="Search products…" /></div>
-      <a class="iconbtn" href="contact.html">Account</a>
-      <a class="iconbtn" href="services.html">Cart <span class="badge">0</span></a>
+      <div class="search"><span>🔍</span><input placeholder="Search products…" data-i18n-placeholder="demo.growth.search" /></div>
+      <button class="iconbtn lang-toggle" type="button" aria-label="Language" data-i18n-aria="nav.language">🌐 EN</button>
+      <a class="iconbtn" href="contact.html" data-i18n="demo.growth.account">Account</a>
+      <a class="iconbtn" href="services.html" data-i18n="demo.growth.cart">Cart <span class="badge">0</span></a>
     </div>
   </div>
 </header>
 
 <section class="section light reveal" style="padding-top:48px;">
   <div class="container" style="text-align:left;">
-    <h2>Track your order</h2>
-    <p class="sub" style="margin-left:0;">
+    <h2 data-i18n="demo.growth.track.title">Track your order</h2>
+    <p class="sub" style="margin-left:0;" data-i18n="demo.growth.track.sub">
       Enter your order details for a real-time shipping update.
     </p>
 
     <form class="form">
       <div class="form-row">
-        <input class="input" placeholder="Order number" />
-        <input class="input" placeholder="Email used at checkout" />
+        <input class="input" placeholder="Order number" data-i18n-placeholder="demo.growth.track.order" />
+        <input class="input" placeholder="Email used at checkout" data-i18n-placeholder="demo.growth.track.email" />
       </div>
-      <button class="btn" type="button">Track (Demo)</button>
-      <div class="helper">Next step: connect to a real fulfillment/tracking provider.</div>
+      <button class="btn" type="button" data-i18n="demo.growth.track.submit">Track (Demo)</button>
+      <div class="helper" data-i18n="demo.growth.track.helper">Next step: connect to a real fulfillment/tracking provider.</div>
     </form>
 
     <div class="grid cols-3" style="margin-top:22px;">
-      <div class="card"><h3>Fast support</h3><p>Track page reduces “where’s my order?” messages.</p></div>
-      <div class="card"><h3>Higher trust</h3><p>Support pages increase purchase confidence.</p></div>
-      <div class="card"><h3>Cleaner flow</h3><p>Customers self-serve before contacting you.</p></div>
+      <div class="card"><h3 data-i18n="demo.growth.track.card1.title">Fast support</h3><p data-i18n="demo.growth.track.card1.body">Track page reduces “where’s my order?” messages.</p></div>
+      <div class="card"><h3 data-i18n="demo.growth.track.card2.title">Higher trust</h3><p data-i18n="demo.growth.track.card2.body">Support pages increase purchase confidence.</p></div>
+      <div class="card"><h3 data-i18n="demo.growth.track.card3.title">Cleaner flow</h3><p data-i18n="demo.growth.track.card3.body">Customers self-serve before contacting you.</p></div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Harbor &amp; Coast Outfitters • Demo by NewGen</p>
+  <p>&copy; 2025 Pulse Sound Lab • Demo by NewGen</p>
 </footer>
 
 <script src="../script.js"></script>
