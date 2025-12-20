@@ -213,7 +213,6 @@
         </div>
         <script>
           (() => {
-            // DOMAIN SEARCH START
             const input = document.getElementById("domain-search-input");
             const button = document.getElementById("domain-search-button");
             const status = document.getElementById("domain-search-status");
@@ -274,20 +273,88 @@
               purchaseOptions.style.display = "block";
             };
 
-            const normalizeDomain = (value) =>
-              value
-                .trim()
-                .toLowerCase()
-                .replace(/^https?:\/\//, "")
-                .split("/")[0]
-                .split("?")[0]
-                .replace(/\.$/, "");
+            const setPurchaseOptions = (domain) => {
+              if (!purchaseOptions || !purchaseLinks) {
+                return;
+              }
+              if (!domain) {
+                purchaseOptions.style.display = "none";
+                purchaseLinks.innerHTML = "";
+                return;
+              }
 
-            const isValidDomain = (value) => {
-              const pattern =
-                /^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/;
-              return pattern.test(value) && value.endsWith(".com");
+              const options = [
+                {
+                  label: "Cloudflare Registrar",
+                  url: `https://dash.cloudflare.com/?to=/:account/registrar/search/${encodeURIComponent(domain)}`,
+                },
+                {
+                  label: "Namecheap",
+                  url: `https://www.namecheap.com/domains/registration/results/?domain=${encodeURIComponent(domain)}`,
+                },
+                {
+                  label: "Porkbun",
+                  url: `https://porkbun.com/checkout/search?q=${encodeURIComponent(domain)}`,
+                },
+                {
+                  label: "Squarespace Domains",
+                  url: `https://domains.squarespace.com/domain-search/results?query=${encodeURIComponent(domain)}`,
+                },
+              ];
+
+              purchaseLinks.innerHTML = "";
+              options.forEach((option) => {
+                const link = document.createElement("a");
+                link.className = "btn ghost";
+                link.href = option.url;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = option.label;
+                purchaseLinks.appendChild(link);
+              });
+              purchaseOptions.style.display = "block";
             };
+
+            const setPurchaseOptions = (domain) => {
+              if (!domain) {
+                purchaseOptions.style.display = "none";
+                purchaseLinks.innerHTML = "";
+                return;
+              }
+
+              const options = [
+                {
+                  label: "Cloudflare Registrar",
+                  url: `https://dash.cloudflare.com/?to=/:account/registrar/search/${encodeURIComponent(domain)}`,
+                },
+                {
+                  label: "Namecheap",
+                  url: `https://www.namecheap.com/domains/registration/results/?domain=${encodeURIComponent(domain)}`,
+                },
+                {
+                  label: "Porkbun",
+                  url: `https://porkbun.com/checkout/search?q=${encodeURIComponent(domain)}`,
+                },
+                {
+                  label: "Squarespace Domains",
+                  url: `https://domains.squarespace.com/domain-search/results?query=${encodeURIComponent(domain)}`,
+                },
+              ];
+
+              purchaseLinks.innerHTML = "";
+              options.forEach((option) => {
+                const link = document.createElement("a");
+                link.className = "btn ghost";
+                link.href = option.url;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = option.label;
+                purchaseLinks.appendChild(link);
+              });
+              purchaseOptions.style.display = "block";
+            };
+
+            const normalizeDomain = (value) => value.trim().toLowerCase();
 
             const checkDomain = async () => {
               const domain = normalizeDomain(input.value);
@@ -370,7 +437,6 @@
                 checkDomain();
               }
             });
-            // DOMAIN SEARCH END
           })();
         </script>
       </div>
