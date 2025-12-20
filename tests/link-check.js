@@ -37,6 +37,7 @@ function isLocalHref(href) {
     lower.startsWith('https://') ||
     lower.startsWith('//') ||
     lower.startsWith('mailto:') ||
+    lower.startsWith('sms:') ||
     lower.startsWith('tel:')
   ) {
     return false;
