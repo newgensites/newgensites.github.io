@@ -30,6 +30,22 @@ document.querySelectorAll(".dd > a").forEach(a => {
   });
 });
 
+// Demo form submit
+document.querySelectorAll("[data-demo-submit]").forEach(button => {
+  button.addEventListener("click", () => {
+    const form = button.closest("form");
+    if (!form) return;
+    const status = form.querySelector("[data-demo-status]");
+    const fields = Array.from(form.querySelectorAll("input, textarea"));
+    const hasValue = fields.some(field => field.value.trim().length > 0);
+    if (status) {
+      status.textContent = hasValue
+        ? "Thanks! This demo form doesn't send yet, but we'll follow up once it's connected."
+        : "Add a few quick details so we can respond with the right package.";
+    }
+  });
+});
+
 // Language toggle
 const LANGUAGE_STORAGE_KEY = "ng-lang";
 const translations = {
