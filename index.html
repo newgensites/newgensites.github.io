@@ -211,7 +211,6 @@
             const input = document.getElementById("domain-search-input");
             const button = document.getElementById("domain-search-button");
             const status = document.getElementById("domain-search-status");
-            const contactEmail = "hello@example.com";
 
             const setStatus = (message, tone = "inherit") => {
               status.style.color = tone;
@@ -246,15 +245,7 @@
                 }
 
                 if (response.status === 404) {
-                  const subject = encodeURIComponent(`Domain purchase request: ${domain}`);
-                  const body = encodeURIComponent(
-                    `Hi team,%0D%0A%0D%0AI'd like you to purchase the domain ${domain} for me. Please let me know next steps.%0D%0A%0D%0AThanks!`
-                  );
-                  setStatus(
-                    `<strong>${domain}</strong> looks available! ` +
-                      `<a class="btn" style="margin-left:8px;" href="mailto:${contactEmail}?subject=${subject}&body=${body}">Request Purchase</a>`,
-                    "#15803d"
-                  );
+                  setStatus(`<strong>${domain}</strong> looks available! Want us to grab it for you?`, "#15803d");
                   return;
                 }
 
