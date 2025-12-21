@@ -30,6 +30,16 @@ document.querySelectorAll(".dd > a").forEach(a => {
   });
 });
 
+// Back link support
+document.querySelectorAll('[data-i18n="nav.back"]').forEach(link => {
+  link.addEventListener("click", (e) => {
+    if (window.history.length > 1) {
+      e.preventDefault();
+      window.history.back();
+    }
+  });
+});
+
 // Demo form submit
 document.querySelectorAll("[data-demo-submit]").forEach(button => {
   button.addEventListener("click", () => {
