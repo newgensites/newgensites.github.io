@@ -241,7 +241,8 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:26px 0}
   min-width:320px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;
   box-shadow:0 10px 30px rgba(0,0,0,.06)
 }
-.tpl .shot{height:210px;background:#000;background-size:cover;background-position:center}
+.tpl .shot{height:210px;background:#000;position:relative;overflow:hidden;border-radius:18px}
+.tpl .shot iframe{width:260%;height:260%;border:0;transform:scale(.38);transform-origin:top left;pointer-events:none;display:block}
 .tpl .cap{padding:14px;text-align:left}
 .tpl .cap strong{display:block;letter-spacing:-.2px}
 .tpl .cap span{display:block;color:var(--muted);margin-top:4px}
