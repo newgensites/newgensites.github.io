@@ -220,6 +220,37 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:26px 0}
   border:1px solid var(--line);background:#fff;border-radius:14px;padding:10px 12px;display:inline-flex;align-items:center;gap:8px
 }
 
+[data-admin-lock-target]{
+  position:relative;
+}
+
+[data-admin-lock-target].is-admin-locked{
+  filter:grayscale(.2);
+  opacity:.65;
+}
+
+[data-admin-lock-target].is-admin-locked > *{
+  pointer-events:none;
+  user-select:none;
+}
+
+[data-admin-lock-target].is-admin-locked::after{
+  content:attr(data-admin-lock-message);
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px;
+  border-radius:inherit;
+  background:rgba(15,23,42,.6);
+  color:#fff;
+  font-weight:700;
+  letter-spacing:-.2px;
+  text-shadow:0 2px 10px rgba(0,0,0,.35);
+}
+
 /* Booking widget */
 [data-booking-widget]{
   min-width:0;
