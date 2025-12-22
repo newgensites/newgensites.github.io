@@ -56,6 +56,43 @@ document.querySelectorAll("[data-demo-submit]").forEach(button => {
   });
 });
 
+// Booking calendar toggle
+document.querySelectorAll("[data-booking-widget]").forEach(widget => {
+  const dateButtons = Array.from(widget.querySelectorAll("[data-booking-date]"));
+  const hoursPanel = widget.querySelector("[data-booking-hours]");
+  const selectedLabel = widget.querySelector("[data-booking-selected-date]");
+  if (!dateButtons.length || !hoursPanel) return;
+
+  let activeDate = null;
+
+  const setHoursVisibility = (isVisible, dateText = "") => {
+    hoursPanel.hidden = !isVisible;
+    widget.classList.toggle("booking-hours-open", isVisible);
+    if (selectedLabel) {
+      selectedLabel.textContent = isVisible ? dateText : "";
+    }
+  };
+
+  setHoursVisibility(false);
+
+  dateButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const dateValue = button.dataset.bookingDate || button.textContent.trim();
+      if (activeDate === dateValue) {
+        button.classList.remove("is-selected");
+        activeDate = null;
+        setHoursVisibility(false);
+        return;
+      }
+
+      dateButtons.forEach(btn => btn.classList.remove("is-selected"));
+      button.classList.add("is-selected");
+      activeDate = dateValue;
+      setHoursVisibility(true, dateValue);
+    });
+  });
+});
+
 // Language toggle
 const LANGUAGE_STORAGE_KEY = "ng-lang";
 const translations = {
