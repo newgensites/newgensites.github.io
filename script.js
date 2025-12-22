@@ -49,9 +49,11 @@ document.querySelectorAll("[data-demo-submit]").forEach(button => {
     const fields = Array.from(form.querySelectorAll("input, textarea"));
     const hasValue = fields.some(field => field.value.trim().length > 0);
     if (status) {
-      status.textContent = hasValue
-        ? "Thanks! This demo form doesn't send yet, but we'll follow up once it's connected."
-        : "Add a few quick details so we can respond with the right package.";
+      const successMessage = status.dataset.demoSuccess
+        || "Thanks! This demo form doesn't send yet, but we'll follow up once it's connected.";
+      const emptyMessage = status.dataset.demoEmpty
+        || "Add a few quick details so we can respond with the right package.";
+      status.textContent = hasValue ? successMessage : emptyMessage;
     }
   });
 });
