@@ -56,6 +56,69 @@ document.querySelectorAll("[data-demo-submit]").forEach(button => {
   });
 });
 
+const initAdminAccessLocks = () => {
+  const accessPanels = document.querySelectorAll("[data-admin-access]");
+  if (!accessPanels.length) return;
+
+  accessPanels.forEach(panel => {
+    const pinInput = panel.querySelector("[data-admin-pin]");
+    const unlockButton = panel.querySelector("[data-admin-unlock]");
+    const status = panel.querySelector("[data-admin-status]");
+    const accessKey = panel.dataset.adminAccess || "default";
+    const lockTargets = document.querySelectorAll(`[data-admin-lock-target="${accessKey}"]`);
+
+    if (!pinInput || !unlockButton || !lockTargets.length) return;
+
+    const requiredPin = panel.dataset.adminPin || pinInput.dataset.adminPin || "";
+    const storageKey = `ng-admin-access:${accessKey}`;
+
+    const setLocked = (locked) => {
+      lockTargets.forEach(target => {
+        target.classList.toggle("is-admin-locked", locked);
+        target.setAttribute("aria-disabled", locked ? "true" : "false");
+        if (!target.dataset.adminLockMessage) {
+          target.dataset.adminLockMessage = "Locked — enter admin access to unlock.";
+        }
+      });
+    };
+
+    const updateLockState = () => {
+      const isUnlocked = sessionStorage.getItem(storageKey) === "true";
+      setLocked(!isUnlocked);
+    };
+
+    updateLockState();
+
+    unlockButton.addEventListener("click", () => {
+      const enteredPin = pinInput.value.trim();
+      const isValid = requiredPin ? enteredPin === requiredPin : enteredPin.length > 0;
+
+      if (!isValid) {
+        if (status) {
+          status.textContent = "Incorrect PIN. Try again.";
+        }
+        pinInput.focus();
+        return;
+      }
+
+      sessionStorage.setItem(storageKey, "true");
+      updateLockState();
+      if (status) {
+        status.textContent = "Admin tools unlocked.";
+      }
+    });
+
+    pinInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        unlockButton.click();
+      }
+    });
+  });
+};
+
+initAdminAccessLocks();
+
 // Booking calendar toggle
 document.querySelectorAll("[data-booking-widget]").forEach(widget => {
   const dateButtons = Array.from(widget.querySelectorAll("[data-booking-date]"));
