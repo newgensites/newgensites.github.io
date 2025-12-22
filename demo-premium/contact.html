@@ -80,21 +80,20 @@
     <h2 data-i18n="demo.premium.contact.form.title">Appointment request</h2>
     <p class="sub" style="margin-left:0;" data-i18n="demo.premium.contact.form.subtitle">Demo form (front-end). Requests are confirmed within one business day.</p>
 
-    <form class="form" data-booking-form>
+    <form class="form">
       <div class="form-row">
-        <input class="input" placeholder="Full name" data-i18n="demo.premium.contact.form.name" data-i18n-attr="placeholder" data-booking-name />
-        <input class="input" placeholder="Email" data-i18n="demo.premium.contact.form.email" data-i18n-attr="placeholder" data-booking-email />
+        <input class="input" placeholder="Full name" data-i18n="demo.premium.contact.form.name" data-i18n-attr="placeholder" />
+        <input class="input" placeholder="Email" data-i18n="demo.premium.contact.form.email" data-i18n-attr="placeholder" />
       </div>
       <div class="form-row">
-        <input class="input" placeholder="Phone" data-i18n="demo.premium.contact.form.phone" data-i18n-attr="placeholder" data-booking-phone />
-        <input class="input" placeholder="Preferred location" data-i18n="demo.premium.contact.form.business" data-i18n-attr="placeholder" data-booking-location />
+        <input class="input" placeholder="Phone" data-i18n="demo.premium.contact.form.phone" data-i18n-attr="placeholder" />
+        <input class="input" placeholder="Preferred location" data-i18n="demo.premium.contact.form.business" data-i18n-attr="placeholder" />
       </div>
-      <input class="input" placeholder="Reason for visit (annual exam, urgent care, pediatrics)" data-i18n="demo.premium.contact.form.industry" data-i18n-attr="placeholder" data-booking-reason />
-      <input class="input" type="date" placeholder="Preferred date" data-i18n="demo.premium.contact.form.pages" data-i18n-attr="placeholder" data-booking-date-input />
-      <textarea class="textarea" placeholder="Tell us anything that helps us prepare for your visit." data-i18n="demo.premium.contact.form.details" data-i18n-attr="placeholder" data-booking-notes></textarea>
-      <button class="btn accent" type="button" data-i18n="demo.premium.contact.form.submit" data-booking-submit>Submit Request (Demo)</button>
+      <input class="input" placeholder="Reason for visit (annual exam, urgent care, pediatrics)" data-i18n="demo.premium.contact.form.industry" data-i18n-attr="placeholder" />
+      <input class="input" type="date" placeholder="Preferred date" data-i18n="demo.premium.contact.form.pages" data-i18n-attr="placeholder" />
+      <textarea class="textarea" placeholder="Tell us anything that helps us prepare for your visit." data-i18n="demo.premium.contact.form.details" data-i18n-attr="placeholder"></textarea>
+      <button class="btn accent" type="button" data-i18n="demo.premium.contact.form.submit">Submit Request (Demo)</button>
       <div class="helper" data-i18n="demo.premium.contact.form.helper">We’ll confirm availability and next steps by email or phone.</div>
-      <div class="helper booking-message" data-booking-message>Admin link will appear here after you submit (PIN protected).</div>
     </form>
 
     <div class="card" style="margin-top:24px;">
@@ -104,12 +103,6 @@
         <li data-i18n="demo.premium.contact.next.item2">You’ll receive a checklist for forms and arrival instructions.</li>
         <li data-i18n="demo.premium.contact.next.item3">Same-day visits are available based on clinic schedules.</li>
       </ul>
-    </div>
-
-    <div class="card booking-calendar" style="margin-top:24px;">
-      <h3>Request status calendar</h3>
-      <p class="sub" style="margin-left:0;">Each request stays pending until you approve or decline it on the admin page.</p>
-      <div data-booking-calendar></div>
     </div>
   </div>
 </section>
