@@ -681,7 +681,6 @@ const translations = {
     "demo.premium.pricing.custom.best": "<strong>Ideal para:</strong> marcas que necesitan funciones avanzadas.",
     "demo.premium.pricing.custom.item1": "Páginas y flujos personalizados",
     "demo.premium.pricing.custom.item2": "Reservas, pagos, formularios",
-    "demo.premium.pricing.custom.item5": "Pagos en efectivo y con tarjeta",
     "demo.premium.pricing.custom.item3": "Analíticas + tracking",
     "demo.premium.pricing.custom.item4": "Secciones de marketing",
     "demo.premium.pricing.custom.talk": "Hablemos",
